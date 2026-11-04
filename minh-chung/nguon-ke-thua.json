@@ -1,0 +1,30 @@
+{
+  "baselineCommit": "a43d5581a9fe3fa6ca2ddd81af50020a3a9e63ef",
+  "baselineArchive": "BTVNB1_PTUD.zip",
+  "images": [
+    {
+      "name": "kem-duong-am.svg",
+      "baselineSha256": "7b5dedea21e1ff5c483dc2faf6b06889d7ffc9e84207046c094584bf05240341",
+      "finalSha256": "7b5dedea21e1ff5c483dc2faf6b06889d7ffc9e84207046c094584bf05240341",
+      "unchanged": true
+    },
+    {
+      "name": "sua-rua-mat.svg",
+      "baselineSha256": "140236ad51b08accb996faeab9df9df7c02de590d69403ee2fd1fa743b6a58a6",
+      "finalSha256": "140236ad51b08accb996faeab9df9df7c02de590d69403ee2fd1fa743b6a58a6",
+      "unchanged": true
+    },
+    {
+      "name": "tinh-chat-duong-da.svg",
+      "baselineSha256": "da4449e720cc5ef6534bc10b305b6a0ee640f8494dde8d01519778b827c73241",
+      "finalSha256": "da4449e720cc5ef6534bc10b305b6a0ee640f8494dde8d01519778b827c73241",
+      "unchanged": true
+    },
+    {
+      "name": "xa-phong-thien-nhien.svg",
+      "baselineSha256": "32791e87457b02aa788d9fb61e2e07e5e7820eccd2a19f147860254d49fd6428",
+      "finalSha256": "32791e87457b02aa788d9fb61e2e07e5e7820eccd2a19f147860254d49fd6428",
+      "unchanged": true
+    }
+  ]
+}

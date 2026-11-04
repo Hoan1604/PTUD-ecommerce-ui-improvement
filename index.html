@@ -3,98 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Giao diện mẫu danh sách sản phẩm thương mại điện tử bằng HTML5 và CSS3.">
+  <meta name="description" content="Sống Xanh - giao diện thực hành HTML5 và CSS3 với bốn sản phẩm chăm sóc cá nhân minh họa.">
   <title>Sống Xanh - Sản phẩm nổi bật</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="dau-trang">
+  <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng đến nội dung</a>
   <header class="site-header">
-    <div class="container">
-      <a class="brand" href="#" aria-label="Sống Xanh - Trang chủ">SỐNG XANH</a>
-      <p class="header-note">Những lựa chọn giản dị cho cuộc sống mỗi ngày</p>
+    <div class="container header-inner">
+      <a class="brand" href="#dau-trang" aria-label="Sống Xanh - về đầu trang">SỐNG XANH</a>
+      <nav aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#san-pham">Sản phẩm</a></li>
+          <li><a href="#gioi-thieu">Về Sống Xanh</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="product-section" aria-labelledby="product-heading">
+  <main class="container" id="noi-dung" tabindex="-1">
+    <section class="product-section" id="san-pham" aria-labelledby="product-heading">
       <div class="section-heading">
-        <p class="eyebrow">BỘ SƯU TẬP ĐƯỢC YÊU THÍCH</p>
+        <p class="eyebrow">NHỮNG LỰA CHỌN GIẢN DỊ MỖI NGÀY</p>
         <h1 id="product-heading">Sản phẩm nổi bật</h1>
         <p class="section-description">Khám phá những sản phẩm chăm sóc cá nhân lấy cảm hứng từ thiên nhiên.</p>
+        <p class="collection-note">04 sản phẩm minh họa · HTML5 và CSS3</p>
       </div>
 
-      <div class="product-grid">
-        <article class="product-card">
-          <a class="product-image" href="#" aria-label="Xem sản phẩm Tinh chất dưỡng da">
-            <img src="images/tinh-chat-duong-da.svg" alt="Chai tinh chất dưỡng da màu xanh nhạt" width="600" height="600">
-          </a>
-          <div class="product-info">
-            <p class="product-category">CHĂM SÓC DA</p>
-            <h2 class="product-name">Tinh chất dưỡng da thiên nhiên</h2>
-            <p class="product-description">Làm mới quy trình chăm sóc da hằng ngày.</p>
-            <div class="product-prices">
-  <span class="product-price">259.000đ</span>
-  <span class="old-price">320.000đ</span>
-</div>
-            <button class="buy-button" type="button" aria-label="Mua ngay Tinh chất dưỡng da thiên nhiên">Mua ngay</button>
-          </div>
-        </article>
+      <ul class="product-grid" aria-label="Bốn sản phẩm nổi bật">
+        <li>
+          <article class="product-card" id="tinh-chat" aria-labelledby="tinh-chat-title">
+            <a class="product-image" href="images/tinh-chat-duong-da.svg" aria-label="Mở ảnh minh họa tinh chất dưỡng da thiên nhiên">
+              <img src="images/tinh-chat-duong-da.svg" alt="Chai tinh chất dưỡng da màu xanh nhạt" width="600" height="600">
+            </a>
+            <div class="product-info">
+              <p class="product-category">CHĂM SÓC DA</p>
+              <h2 class="product-name" id="tinh-chat-title">Tinh chất dưỡng da thiên nhiên</h2>
+              <p class="product-description">Làm mới quy trình chăm sóc da hằng ngày.</p>
+              <div class="price-block">
+                <p class="product-prices">
+                  <span class="product-price"><span class="sr-only">Giá minh họa </span>259.000đ</span>
+                  <del class="old-price"><span class="sr-only">Giá trước đây </span>320.000đ</del>
+                </p>
+                <p class="savings">Tiết kiệm 61.000đ</p>
+              </div>
+              <details class="product-details">
+                <summary aria-label="Xem thông tin tinh chất dưỡng da thiên nhiên">Xem thông tin</summary>
+                <div class="details-content">
+                  <dl class="product-specs">
+                    <div><dt>Quy cách mẫu</dt><dd>30 ml</dd></div>
+                    <div><dt>Mã minh họa</dt><dd>SX-TINH-CHAT</dd></div>
+                  </dl>
+                  <p>Ảnh, giá và quy cách phục vụ thực hành giao diện.</p>
+                  <a class="image-link" href="images/tinh-chat-duong-da.svg">Mở ảnh minh họa<span class="sr-only"> tinh chất dưỡng da thiên nhiên</span></a>
+                </div>
+              </details>
+            </div>
+          </article>
+        </li>
 
-        <article class="product-card">
-          <a class="product-image" href="#" aria-label="Xem sản phẩm Sữa rửa mặt">
-            <img src="images/sua-rua-mat.svg" alt="Chai sữa rửa mặt màu kem" width="600" height="600">
-          </a>
-          <div class="product-info">
-            <p class="product-category">CHĂM SÓC DA</p>
-            <h2 class="product-name">Sữa rửa mặt dịu nhẹ</h2>
-            <p class="product-description">Làm sạch nhẹ nhàng cho thói quen mỗi ngày.</p>
-            <div class="product-prices">
-  <span class="product-price">189.000đ</span>
-  <span class="old-price">240.000đ</span>
-</div>
-            <button class="buy-button" type="button" aria-label="Mua ngay Sữa rửa mặt dịu nhẹ">Mua ngay</button>
-          </div>
-        </article>
+        <li>
+          <article class="product-card" id="sua-rua-mat" aria-labelledby="sua-rua-mat-title">
+            <a class="product-image" href="images/sua-rua-mat.svg" aria-label="Mở ảnh minh họa sữa rửa mặt dịu nhẹ">
+              <img src="images/sua-rua-mat.svg" alt="Chai sữa rửa mặt màu kem" width="600" height="600">
+            </a>
+            <div class="product-info">
+              <p class="product-category">CHĂM SÓC DA</p>
+              <h2 class="product-name" id="sua-rua-mat-title">Sữa rửa mặt dịu nhẹ</h2>
+              <p class="product-description">Làm sạch nhẹ nhàng cho thói quen mỗi ngày.</p>
+              <div class="price-block">
+                <p class="product-prices">
+                  <span class="product-price"><span class="sr-only">Giá minh họa </span>189.000đ</span>
+                  <del class="old-price"><span class="sr-only">Giá trước đây </span>240.000đ</del>
+                </p>
+                <p class="savings">Tiết kiệm 51.000đ</p>
+              </div>
+              <details class="product-details">
+                <summary aria-label="Xem thông tin sữa rửa mặt dịu nhẹ">Xem thông tin</summary>
+                <div class="details-content">
+                  <dl class="product-specs">
+                    <div><dt>Quy cách mẫu</dt><dd>150 ml</dd></div>
+                    <div><dt>Mã minh họa</dt><dd>SX-SUA-RUA-MAT</dd></div>
+                  </dl>
+                  <p>Ảnh, giá và quy cách phục vụ thực hành giao diện.</p>
+                  <a class="image-link" href="images/sua-rua-mat.svg">Mở ảnh minh họa<span class="sr-only"> sữa rửa mặt dịu nhẹ</span></a>
+                </div>
+              </details>
+            </div>
+          </article>
+        </li>
 
-        <article class="product-card">
-          <a class="product-image" href="#" aria-label="Xem sản phẩm Kem dưỡng ẩm">
-            <img src="images/kem-duong-am.svg" alt="Hũ kem dưỡng ẩm màu trắng trên nền xanh lá nhạt" width="600" height="600">
-          </a>
-          <div class="product-info">
-            <p class="product-category">DƯỠNG ẨM</p>
-            <h2 class="product-name">Kem dưỡng ẩm thực vật</h2>
-            <p class="product-description">Bổ sung bước dưỡng ẩm cho làn da.</p>
-            <div class="product-prices">
-  <span class="product-price">229.000đ</span>
-  <span class="old-price">299.000đ</span>
-</div>
-            <button class="buy-button" type="button" aria-label="Mua ngay Kem dưỡng ẩm thực vật">Mua ngay</button>
-          </div>
-        </article>
+        <li>
+          <article class="product-card" id="kem-duong" aria-labelledby="kem-duong-title">
+            <a class="product-image" href="images/kem-duong-am.svg" aria-label="Mở ảnh minh họa kem dưỡng ẩm thực vật">
+              <img src="images/kem-duong-am.svg" alt="Hũ kem dưỡng ẩm màu trắng trên nền xanh lá nhạt" width="600" height="600">
+            </a>
+            <div class="product-info">
+              <p class="product-category">DƯỠNG ẨM</p>
+              <h2 class="product-name" id="kem-duong-title">Kem dưỡng ẩm thực vật</h2>
+              <p class="product-description">Bổ sung bước dưỡng ẩm cho làn da.</p>
+              <div class="price-block">
+                <p class="product-prices">
+                  <span class="product-price"><span class="sr-only">Giá minh họa </span>229.000đ</span>
+                  <del class="old-price"><span class="sr-only">Giá trước đây </span>299.000đ</del>
+                </p>
+                <p class="savings">Tiết kiệm 70.000đ</p>
+              </div>
+              <details class="product-details">
+                <summary aria-label="Xem thông tin kem dưỡng ẩm thực vật">Xem thông tin</summary>
+                <div class="details-content">
+                  <dl class="product-specs">
+                    <div><dt>Quy cách mẫu</dt><dd>50 g</dd></div>
+                    <div><dt>Mã minh họa</dt><dd>SX-KEM-DUONG</dd></div>
+                  </dl>
+                  <p>Ảnh, giá và quy cách phục vụ thực hành giao diện.</p>
+                  <a class="image-link" href="images/kem-duong-am.svg">Mở ảnh minh họa<span class="sr-only"> kem dưỡng ẩm thực vật</span></a>
+                </div>
+              </details>
+            </div>
+          </article>
+        </li>
 
-        <article class="product-card">
-          <a class="product-image" href="#" aria-label="Xem sản phẩm Xà phòng thiên nhiên">
-            <img src="images/xa-phong-thien-nhien.svg" alt="Bánh xà phòng thiên nhiên màu xanh lá nhạt" width="600" height="600">
-          </a>
-          <div class="product-info">
-            <p class="product-category">CHĂM SÓC CƠ THỂ</p>
-            <h2 class="product-name">Xà phòng thiên nhiên</h2>
-            <p class="product-description">Một lựa chọn đơn giản cho việc chăm sóc cơ thể.</p>
-            <div class="product-prices">
-  <span class="product-price">79.000đ</span>
-  <span class="old-price">99.000đ</span>
-</div>
-            <button class="buy-button" type="button" aria-label="Mua ngay Xà phòng thiên nhiên">Mua ngay</button>
-          </div>
-        </article>
+        <li>
+          <article class="product-card" id="xa-phong" aria-labelledby="xa-phong-title">
+            <a class="product-image" href="images/xa-phong-thien-nhien.svg" aria-label="Mở ảnh minh họa xà phòng thiên nhiên">
+              <img src="images/xa-phong-thien-nhien.svg" alt="Bánh xà phòng thiên nhiên màu xanh lá nhạt" width="600" height="600">
+            </a>
+            <div class="product-info">
+              <p class="product-category">CHĂM SÓC CƠ THỂ</p>
+              <h2 class="product-name" id="xa-phong-title">Xà phòng thiên nhiên</h2>
+              <p class="product-description">Một lựa chọn đơn giản cho việc chăm sóc cơ thể.</p>
+              <div class="price-block">
+                <p class="product-prices">
+                  <span class="product-price"><span class="sr-only">Giá minh họa </span>79.000đ</span>
+                  <del class="old-price"><span class="sr-only">Giá trước đây </span>99.000đ</del>
+                </p>
+                <p class="savings">Tiết kiệm 20.000đ</p>
+              </div>
+              <details class="product-details">
+                <summary aria-label="Xem thông tin xà phòng thiên nhiên">Xem thông tin</summary>
+                <div class="details-content">
+                  <dl class="product-specs">
+                    <div><dt>Quy cách mẫu</dt><dd>100 g</dd></div>
+                    <div><dt>Mã minh họa</dt><dd>SX-XA-PHONG</dd></div>
+                  </dl>
+                  <p>Ảnh, giá và quy cách phục vụ thực hành giao diện.</p>
+                  <a class="image-link" href="images/xa-phong-thien-nhien.svg">Mở ảnh minh họa<span class="sr-only"> xà phòng thiên nhiên</span></a>
+                </div>
+              </details>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <p class="demo-note">Bản thực hành giao diện. Giá và quy cách là dữ liệu mẫu; chưa có chức năng đặt hàng.</p>
+    </section>
+
+    <section class="about-section" id="gioi-thieu" aria-labelledby="about-heading">
+      <div>
+        <p class="eyebrow">VỀ SỐNG XANH</p>
+        <h2 id="about-heading">Chăm chút từ những điều nhỏ</h2>
+        <p>Giao diện học tập tiếp tục từ bài Buổi 1, tham khảo cách tổ chức thông tin sản phẩm của Cỏ Mềm. Sống Xanh là thương hiệu minh họa trong bài thực hành.</p>
       </div>
-      <p class="demo-note">Đây là giao diện minh họa. Nút “Mua ngay” chưa kết nối với giỏ hàng hoặc hệ thống đặt hàng.</p>
+      <div class="about-links">
+        <a href="https://comem.vn/">Tham khảo website Cỏ Mềm</a>
+        <a href="#dau-trang">Về đầu trang ↑</a>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Sống Xanh · Giao diện học tập HTML5 &amp; CSS3</p>
+      <p>© 2026 Sống Xanh · Bài tập cá nhân Buổi 2 · Vũ Văn Hoàn · 31241028406</p>
     </div>
   </footer>
 </body>
