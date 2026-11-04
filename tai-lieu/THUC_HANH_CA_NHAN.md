@@ -22,9 +22,9 @@ Phải sửa quy tắc trong media query vì mục tiêu là điện thoại; qu
 4. Quan sát khoảng cách chữ tới viền và bấm Xem thông tin; chụp ảnh sau sửa.
 5. Đối chiếu: 390px vẫn một cột; không tràn ngang; từ 600px trở lên padding cơ sở vẫn 20px.
 
-**Ghi nhận:** Hướng dẫn đã được cung cấp; chưa có xác nhận sinh viên hoàn thành thao tác tự sửa. Kết quả tự động được ghi riêng, không dùng để xác nhận thao tác cá nhân.
+**Ghi nhận:** Sinh viên xác nhận “Tôi vừa sửa xong thành 16px”. AI đối chiếu file đã lưu, kiểm tra lại bản mã đồng bộ và chụp ảnh trước/sau từ hai trạng thái mã. Thao tác sửa CSS do sinh viên thực hiện; số đo và ảnh trong bộ bài do AI thực hiện.
 
-Ảnh `minh-chung/tu-thuc-hanh/truoc-390.png` là ảnh do AI chụp từ bản CSS 14px thật trước khi gửi hướng dẫn. Ảnh `sau-390.png`, nếu có, được AI chụp lại sau khi bản mã 16px đã được xác nhận; không gọi đây là ảnh sinh viên tự gửi. Các ảnh CSS ghi đè tạm, nếu có, nằm trong `thu-nghiem/` và không dùng làm bằng chứng thao tác cá nhân.
+Ảnh `minh-chung/tu-thuc-hanh/truoc-390.png` là ảnh do AI chụp từ bản CSS 14px thật trước khi gửi hướng dẫn. Ảnh `sau-390.png` được AI chụp lại sau khi bản mã 16px đã được xác nhận; không gọi đây là ảnh sinh viên tự gửi. Các ảnh CSS ghi đè tạm nằm trong `thu-nghiem/` và không dùng làm bằng chứng thao tác cá nhân.
 
 ## Năm yêu cầu sửa mã giảng viên có thể chọn
 

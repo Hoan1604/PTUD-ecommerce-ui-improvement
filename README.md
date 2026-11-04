@@ -32,10 +32,10 @@ Không cần cài thư viện hoặc kết nối mạng để xem trang. Liên k
 
 | Chiều rộng px | Số cột | Chiều rộng tài liệu px | Padding nội dung thẻ | Kết quả |
 |---:|---:|---:|---|---|
-| 320 | 1 | 320 | 14px | Đạt |
-| 360 | 1 | 360 | 14px | Đạt |
-| 390 | 1 | 390 | 14px | Đạt |
-| 599 | 1 | 599 | 14px | Đạt |
+| 320 | 1 | 320 | 16px | Đạt |
+| 360 | 1 | 360 | 16px | Đạt |
+| 390 | 1 | 390 | 16px | Đạt |
+| 599 | 1 | 599 | 16px | Đạt |
 | 600 | 2 | 600 | 20px | Đạt |
 | 768 | 2 | 768 | 20px | Đạt |
 | 1023 | 2 | 1023 | 20px | Đạt |
@@ -69,10 +69,10 @@ Không cần cài thư viện hoặc kết nối mạng để xem trang. Liên k
 
 Codex hỗ trợ phân tích, sửa HTML/CSS, thực nghiệm trên trình duyệt, chụp ảnh và biên soạn báo cáo. Prompt và nội dung kiểm tra được ghi trong `AI_USAGE.md`; không gọi các nhóm công việc biên tập là những tin nhắn đã gửi riêng biệt.
 
-Hướng dẫn đã được cung cấp; chưa có xác nhận sinh viên hoàn thành thao tác tự sửa. Kết quả tự động được ghi riêng, không dùng để xác nhận thao tác cá nhân.
+Sinh viên xác nhận “Tôi vừa sửa xong thành 16px”. AI đối chiếu file đã lưu, kiểm tra lại bản mã đồng bộ và chụp ảnh trước/sau từ hai trạng thái mã. Thao tác sửa CSS do sinh viên thực hiện; số đo và ảnh trong bộ bài do AI thực hiện.
 
 ## Repository
 
-[Hoan1604/PTUD-ecommerce-ui-improvement](https://github.com/Hoan1604/PTUD-ecommerce-ui-improvement) · nhánh `main`. Bản mã được chuẩn bị trên nhánh `main`, kế thừa lịch sử Buổi 1. Trạng thái push được ghi riêng trong `tai-lieu/GITHUB.md`.
+[Hoan1604/PTUD-ecommerce-ui-improvement](https://github.com/Hoan1604/PTUD-ecommerce-ui-improvement) · nhánh `main`. Đã push lên nhánh `main` và đối chiếu mã commit trên máy với GitHub.
 
 Không có xác nhận triển khai GitHub Pages trong bộ bài này.

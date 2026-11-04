@@ -173,7 +173,7 @@ section, main { scroll-margin-top: 20px; }
   .section-heading { margin-bottom: 24px; text-align: left; }
   .section-description { font-size: .9375rem; }
   .product-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
-  .product-info { padding: 16px; } /* THỰC HÀNH CÁ NHÂN: thử tăng lên 16px. */
+  .product-info { padding: 16px; } /* Thực hành cá nhân: tăng từ 14px lên 16px. */
   .product-name { min-height: 0; font-size: 1.125rem; }
   .product-description { font-size: .9375rem; }
   .old-price { font-size: .9375rem; }

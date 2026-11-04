@@ -12,10 +12,10 @@ Tổng hợp: **58 đạt, 0 thất bại**. Các phép đo dưới đây áp d�
 
 | Viewport px | Số cột | Document px | Padding thẻ | Kết quả |
 |---:|---:|---:|---|---|
-| 320 | 1 | 320 | 14px | Đạt |
-| 360 | 1 | 360 | 14px | Đạt |
-| 390 | 1 | 390 | 14px | Đạt |
-| 599 | 1 | 599 | 14px | Đạt |
+| 320 | 1 | 320 | 16px | Đạt |
+| 360 | 1 | 360 | 16px | Đạt |
+| 390 | 1 | 390 | 16px | Đạt |
+| 599 | 1 | 599 | 16px | Đạt |
 | 600 | 2 | 600 | 20px | Đạt |
 | 768 | 2 | 768 | 20px | Đạt |
 | 1023 | 2 | 1023 | 20px | Đạt |
@@ -32,7 +32,7 @@ Tổng hợp: **58 đạt, 0 thất bại**. Các phép đo dưới đây áp d�
 | Liên kết hoạt động | Đạt trong phạm vi cục bộ | Đích fragment tồn tại, menu được bấm, tệp SVG được mở |
 | Bố cục không tràn nghiêm trọng | Đạt | Document width = viewport ở 9 kích thước; thẻ không tràn |
 | Hover/focus hoạt động | Đạt | Màu đổi; transition 0,2s; Tab tới summary, outline 3px |
-| Tự sửa ít nhất một vấn đề | Chờ sinh viên xác nhận | Xem THUC_HANH_CA_NHAN.md; không suy ra từ kiểm thử tự động |
+| Tự sửa ít nhất một vấn đề | Đã có xác nhận của sinh viên | Xem THUC_HANH_CA_NHAN.md; không suy ra từ kiểm thử tự động |
 
 ## Kiểm tra bổ sung
 

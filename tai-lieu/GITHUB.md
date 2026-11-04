@@ -4,7 +4,7 @@ Repository kế thừa Buổi 1: https://github.com/Hoan1604/PTUD-ecommerce-ui-i
 Nhánh: `main`  
 Commit Buổi 1: `a43d5581a9fe3fa6ca2ddd81af50020a3a9e63ef`
 
-Bản mã được chuẩn bị trên nhánh `main`, kế thừa lịch sử Buổi 1. Trạng thái push được ghi riêng trong `tai-lieu/GITHUB.md`.
+Đã push lên nhánh `main` và đối chiếu mã commit trên máy với GitHub.
 
 ## Cách cập nhật từ bản tải về không có thư mục git
 

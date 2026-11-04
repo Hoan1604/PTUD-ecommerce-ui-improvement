@@ -38,7 +38,7 @@ Các dòng sau là **tóm tắt công việc đã thực hiện**, sắp xếp t
 
 ## Phần sinh viên tự điều chỉnh
 
-Hướng dẫn đã được cung cấp; chưa có xác nhận sinh viên hoàn thành thao tác tự sửa. Kết quả tự động được ghi riêng, không dùng để xác nhận thao tác cá nhân. Xem `tai-lieu/THUC_HANH_CA_NHAN.md`.
+Sinh viên xác nhận “Tôi vừa sửa xong thành 16px”. AI đối chiếu file đã lưu, kiểm tra lại bản mã đồng bộ và chụp ảnh trước/sau từ hai trạng thái mã. Thao tác sửa CSS do sinh viên thực hiện; số đo và ảnh trong bộ bài do AI thực hiện. Xem `tai-lieu/THUC_HANH_CA_NHAN.md`.
 
 ## Kiểm chứng và giới hạn
 

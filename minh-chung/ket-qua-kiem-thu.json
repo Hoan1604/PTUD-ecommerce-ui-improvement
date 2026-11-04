@@ -14,12 +14,12 @@
         288
       ],
       "cardHeights": [
-        585.98,
-        558.98,
-        534.98,
-        558.98
+        589.98,
+        562.98,
+        538.98,
+        562.98
       ],
-      "infoPadding": "14px",
+      "infoPadding": "16px",
       "categoryFont": "12px",
       "oldPriceFont": "15px",
       "oldPriceColor": "rgb(88, 101, 91)",
@@ -72,12 +72,12 @@
         328
       ],
       "cardHeights": [
-        574.98,
-        598.98,
-        574.98,
-        598.98
+        578.98,
+        602.98,
+        578.98,
+        602.98
       ],
-      "infoPadding": "14px",
+      "infoPadding": "16px",
       "categoryFont": "12px",
       "oldPriceFont": "15px",
       "oldPriceColor": "rgb(88, 101, 91)",
@@ -130,12 +130,12 @@
         358
       ],
       "cardHeights": [
-        604.98,
-        604.98,
-        604.98,
-        628.98
+        608.98,
+        608.98,
+        608.98,
+        632.98
       ],
-      "infoPadding": "14px",
+      "infoPadding": "16px",
       "categoryFont": "12px",
       "oldPriceFont": "15px",
       "oldPriceColor": "rgb(88, 101, 91)",
@@ -188,12 +188,12 @@
         567
       ],
       "cardHeights": [
-        813.98,
-        813.98,
-        813.98,
-        813.98
+        817.98,
+        817.98,
+        817.98,
+        817.98
       ],
-      "infoPadding": "14px",
+      "infoPadding": "16px",
       "categoryFont": "12px",
       "oldPriceFont": "15px",
       "oldPriceColor": "rgb(88, 101, 91)",
@@ -541,12 +541,12 @@
           288
         ],
         "cardHeights": [
-          585.98,
-          558.98,
-          534.98,
-          558.98
+          589.98,
+          562.98,
+          538.98,
+          562.98
         ],
-        "infoPadding": "14px",
+        "infoPadding": "16px",
         "categoryFont": "12px",
         "oldPriceFont": "15px",
         "oldPriceColor": "rgb(88, 101, 91)",
@@ -642,12 +642,12 @@
           328
         ],
         "cardHeights": [
-          574.98,
-          598.98,
-          574.98,
-          598.98
+          578.98,
+          602.98,
+          578.98,
+          602.98
         ],
-        "infoPadding": "14px",
+        "infoPadding": "16px",
         "categoryFont": "12px",
         "oldPriceFont": "15px",
         "oldPriceColor": "rgb(88, 101, 91)",
@@ -743,12 +743,12 @@
           358
         ],
         "cardHeights": [
-          604.98,
-          604.98,
-          604.98,
-          628.98
+          608.98,
+          608.98,
+          608.98,
+          632.98
         ],
-        "infoPadding": "14px",
+        "infoPadding": "16px",
         "categoryFont": "12px",
         "oldPriceFont": "15px",
         "oldPriceColor": "rgb(88, 101, 91)",
@@ -844,12 +844,12 @@
           567
         ],
         "cardHeights": [
-          813.98,
-          813.98,
-          813.98,
-          813.98
+          817.98,
+          817.98,
+          817.98,
+          817.98
         ],
-        "infoPadding": "14px",
+        "infoPadding": "16px",
         "categoryFont": "12px",
         "oldPriceFont": "15px",
         "oldPriceColor": "rgb(88, 101, 91)",
@@ -1640,12 +1640,12 @@
           358
         ],
         "cardHeights": [
-          794.97,
-          604.98,
-          604.98,
-          628.98
+          798.97,
+          608.98,
+          608.98,
+          632.98
         ],
-        "infoPadding": "14px",
+        "infoPadding": "16px",
         "categoryFont": "12px",
         "oldPriceFont": "15px",
         "oldPriceColor": "rgb(88, 101, 91)",
@@ -1702,12 +1702,12 @@
           358
         ],
         "cardHeights": [
-          604.98,
-          604.98,
-          604.98,
-          628.98
+          608.98,
+          608.98,
+          608.98,
+          632.98
         ],
-        "infoPadding": "14px",
+        "infoPadding": "16px",
         "categoryFont": "12px",
         "oldPriceFont": "15px",
         "oldPriceColor": "rgb(88, 101, 91)",
@@ -1854,12 +1854,12 @@
           358
         ],
         "cardHeights": [
-          604.98,
-          604.98,
-          604.98,
-          628.98
+          608.98,
+          608.98,
+          608.98,
+          632.98
         ],
-        "infoPadding": "14px",
+        "infoPadding": "16px",
         "categoryFont": "12px",
         "oldPriceFont": "15px",
         "oldPriceColor": "rgb(88, 101, 91)",
@@ -2331,12 +2331,12 @@
           358
         ],
         "cardHeights": [
-          604.98,
-          604.98,
-          604.98,
-          628.98
+          608.98,
+          608.98,
+          608.98,
+          632.98
         ],
-        "infoPadding": "14px",
+        "infoPadding": "16px",
         "categoryFont": "12px",
         "oldPriceFont": "15px",
         "oldPriceColor": "rgb(88, 101, 91)",

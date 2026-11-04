@@ -12,7 +12,7 @@ Nguồn yêu cầu: `BaiTap_CaNhan_Buoi2 (1).pdf` do sinh viên cung cấp, 23 t
 | Flexbox và so sánh giá trị thuộc tính | tr. 12–15 | product-prices/nav-list; ảnh thử và số đo 10/63,05px |
 | Grid mở rộng, thử 2 hoặc 3 cột, ảnh không méo | tr. 15–17 | grid-2-cot/grid-3-cot; cuối 4/2/1; contain và khung vuông |
 | Hover, transition, focus-visible | tr. 17–19 | ảnh normal/hover/focus; Tab/Enter/Space |
-| Bảng kiểm, phát hiện và tự sửa nhỏ | tr. 19–20 | KIEM_THU.md; THUC_HANH_CA_NHAN.md; thao tác cá nhân chờ xác nhận |
+| Bảng kiểm, phát hiện và tự sửa nhỏ | tr. 19–20 | KIEM_THU.md; THUC_HANH_CA_NHAN.md; đã có xác nhận sinh viên |
 | 7 câu hỏi kiến thức | tr. 21 | CAU_HOI_KIEN_THUC.md; mục tương ứng trong Word |
 | Chuẩn bị sửa mã trực tiếp | tr. 21 | Bảng 5 tình huống trong THUC_HANH_CA_NHAN.md |
 | README, AI_USAGE, commit và push repo cũ | tr. 21–23 | README.md; AI_USAGE.md; GITHUB.md |

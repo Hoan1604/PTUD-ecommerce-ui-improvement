@@ -1,0 +1,177 @@
+{
+  "date": "04/11/2026",
+  "studentConfirmation": "Tôi vừa sửa xong thành 16px",
+  "imageCaptureAndMeasurementsBy": "Codex",
+  "before390": {
+    "viewport": 390,
+    "documentWidth": 390,
+    "columns": 1,
+    "gap": "20px",
+    "cardWidths": [
+      358,
+      358,
+      358,
+      358
+    ],
+    "cardHeights": [
+      604.98,
+      604.98,
+      604.98,
+      628.98
+    ],
+    "infoPadding": "14px",
+    "categoryFont": "12px",
+    "oldPriceFont": "15px",
+    "oldPriceColor": "rgb(88, 101, 91)",
+    "priceColor": "rgb(168, 62, 50)",
+    "cardBorder": "1px",
+    "cardRadius": "14px",
+    "boxSizing": "border-box",
+    "images": [
+      {
+        "src": "images/tinh-chat-duong-da.svg",
+        "loaded": true,
+        "alt": "Chai tinh chất dưỡng da màu xanh nhạt",
+        "width": 356,
+        "height": 356
+      },
+      {
+        "src": "images/sua-rua-mat.svg",
+        "loaded": true,
+        "alt": "Chai sữa rửa mặt màu kem",
+        "width": 356,
+        "height": 356
+      },
+      {
+        "src": "images/kem-duong-am.svg",
+        "loaded": true,
+        "alt": "Hũ kem dưỡng ẩm màu trắng trên nền xanh lá nhạt",
+        "width": 356,
+        "height": 356
+      },
+      {
+        "src": "images/xa-phong-thien-nhien.svg",
+        "loaded": true,
+        "alt": "Bánh xà phòng thiên nhiên màu xanh lá nhạt",
+        "width": 356,
+        "height": 356
+      }
+    ],
+    "overflowCards": 0,
+    "productCount": 4
+  },
+  "after390": {
+    "viewport": 390,
+    "documentWidth": 390,
+    "columns": 1,
+    "gap": "20px",
+    "cardWidths": [
+      358,
+      358,
+      358,
+      358
+    ],
+    "cardHeights": [
+      608.98,
+      608.98,
+      608.98,
+      632.98
+    ],
+    "infoPadding": "16px",
+    "categoryFont": "12px",
+    "oldPriceFont": "15px",
+    "oldPriceColor": "rgb(88, 101, 91)",
+    "priceColor": "rgb(168, 62, 50)",
+    "cardBorder": "1px",
+    "cardRadius": "14px",
+    "boxSizing": "border-box",
+    "images": [
+      {
+        "src": "images/tinh-chat-duong-da.svg",
+        "loaded": true,
+        "alt": "Chai tinh chất dưỡng da màu xanh nhạt",
+        "width": 356,
+        "height": 356
+      },
+      {
+        "src": "images/sua-rua-mat.svg",
+        "loaded": true,
+        "alt": "Chai sữa rửa mặt màu kem",
+        "width": 356,
+        "height": 356
+      },
+      {
+        "src": "images/kem-duong-am.svg",
+        "loaded": true,
+        "alt": "Hũ kem dưỡng ẩm màu trắng trên nền xanh lá nhạt",
+        "width": 356,
+        "height": 356
+      },
+      {
+        "src": "images/xa-phong-thien-nhien.svg",
+        "loaded": true,
+        "alt": "Bánh xà phòng thiên nhiên màu xanh lá nhạt",
+        "width": 356,
+        "height": 356
+      }
+    ],
+    "overflowCards": 0,
+    "productCount": 4
+  },
+  "afterAllViewports": [
+    {
+      "width": 320,
+      "padding": "16px",
+      "columns": 1,
+      "documentWidth": 320
+    },
+    {
+      "width": 360,
+      "padding": "16px",
+      "columns": 1,
+      "documentWidth": 360
+    },
+    {
+      "width": 390,
+      "padding": "16px",
+      "columns": 1,
+      "documentWidth": 390
+    },
+    {
+      "width": 599,
+      "padding": "16px",
+      "columns": 1,
+      "documentWidth": 599
+    },
+    {
+      "width": 600,
+      "padding": "20px",
+      "columns": 2,
+      "documentWidth": 600
+    },
+    {
+      "width": 768,
+      "padding": "20px",
+      "columns": 2,
+      "documentWidth": 768
+    },
+    {
+      "width": 1023,
+      "padding": "20px",
+      "columns": 2,
+      "documentWidth": 1023
+    },
+    {
+      "width": 1024,
+      "padding": "20px",
+      "columns": 4,
+      "documentWidth": 1024
+    },
+    {
+      "width": 1366,
+      "padding": "20px",
+      "columns": 4,
+      "documentWidth": 1366
+    }
+  ]
+}
