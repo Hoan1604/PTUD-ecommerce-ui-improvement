@@ -9,6 +9,8 @@ const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 const baselineIndex = process.argv.indexOf('--baseline');
 const baseline = baselineIndex >= 0 ? path.resolve(process.argv[baselineIndex + 1]) : null;
+const revisionIndex = process.argv.indexOf('--revision-before');
+const revisionBefore = revisionIndex >= 0 ? path.resolve(process.argv[revisionIndex + 1]) : null;
 const evidence = path.join(root, 'minh-chung');
 const result = { date: '04/11/2026', authorOfChecks: 'Codex', viewports: [], checks: [], experiments: {} };
 const failedRequests = [];
@@ -64,8 +66,8 @@ async function main() {
   const server = http.createServer(async (req, res) => {
     try {
       const reqPath = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
-      const base = reqPath.startsWith('/baseline/') ? baseline : root;
-      const rel = reqPath.replace(/^\/(?:baseline\/)?/, '') || 'index.html';
+      const base = reqPath.startsWith('/baseline/') ? baseline : reqPath.startsWith('/revision/') ? revisionBefore : root;
+      const rel = reqPath.replace(/^\/(?:baseline\/|revision\/)?/, '') || 'index.html';
       const file = path.resolve(base, rel);
       if (!file.startsWith(base + path.sep)) throw Error('Invalid path');
       const data = await fs.readFile(file);
@@ -96,6 +98,18 @@ async function main() {
         await shot(page, `truoc/toan-trang-${width}`);
         await shot(page, `truoc/the-san-pham-${width}`, '.product-card');
       }
+    }
+    if (revisionBefore) {
+      await page.setViewportSize({ width: 1366, height: 900 });
+      await page.goto(url.replace('/index.html', '/revision/index.html'));
+      await page.locator('summary').first().click();
+      await page.mouse.move(0, 0); await page.waitForTimeout(250);
+      result.revisionBefore = await page.evaluate(() => ({
+        openDetails: document.querySelectorAll('details[open]').length,
+        heights: [...document.querySelectorAll('.product-card')].map(x => +x.getBoundingClientRect().height.toFixed(2)),
+        descriptionToPriceGaps: [...document.querySelectorAll('.product-card')].map(c => +(c.querySelector('.product-prices').getBoundingClientRect().top - c.querySelector('.product-description').getBoundingClientRect().bottom).toFixed(2))
+      }));
+      await shot(page, 'dieu-chinh-giao-dien/truoc-mo-thong-tin', '.product-grid');
     }
     for (const width of [320, 360, 390, 599, 600, 768, 1023, 1024, 1366]) {
       await page.setViewportSize({ width, height: 900 });
@@ -133,31 +147,80 @@ async function main() {
     await page.getByRole('link', { name: 'Về đầu trang ↑' }).click();
     check('Liên kết về đầu trang', page.url().endsWith('#dau-trang'), page.url().split('#')[1]);
     await page.goto(url);
-    const summary = page.locator('summary').first();
+    const buy = page.locator('.buy-button').first();
+    const detailLinks = await page.locator('.btn-detail').evaluateAll(nodes => nodes.map(a => a.getAttribute('href')));
+    result.detailLinks = detailLinks;
+    const cta = await page.locator('.buy-button').evaluateAll(nodes => nodes.map(b => ({ tag: b.tagName, type: b.type, text: b.textContent.trim(), note: b.getAttribute('aria-describedby') })));
+    check('Giữ bốn nút Mua ngay và có ghi chú minh họa', cta.length === 4 && cta.every(b => b.tag === 'BUTTON' && b.type === 'button' && b.text === 'Mua ngay' && b.note === 'demo-note'), cta);
+    check('Danh sách không còn khối sổ xuống', await page.locator('details, summary').count() === 0 && detailLinks.length === 4, detailLinks);
+    const relativePositions = () => page.locator('.product-card').evaluateAll(cards => cards.map(c => ({
+      height: +c.getBoundingClientRect().height.toFixed(2),
+      priceOffset: +(c.querySelector('.product-prices').getBoundingClientRect().top-c.getBoundingClientRect().top).toFixed(2),
+      descriptionToPriceGap: +(c.querySelector('.product-prices').getBoundingClientRect().top-c.querySelector('.product-description').getBoundingClientRect().bottom).toFixed(2)
+    })));
+    const layoutBefore = await relativePositions();
     await page.mouse.move(0, 0);
-    const normal = await summary.evaluate(el => getComputedStyle(el).backgroundColor);
+    const normal = await buy.evaluate(el => getComputedStyle(el).backgroundColor);
     await shot(page, 'sau/trang-thai-binh-thuong', '.product-card');
-    await summary.hover(); await page.waitForTimeout(250);
-    const hover = await summary.evaluate(el => ({ background: getComputedStyle(el).backgroundColor, transition: getComputedStyle(el).transitionDuration }));
-    check('Hover và transition', hover.background !== normal && hover.transition.includes('0.2s'), { normal, ...hover });
+    await buy.hover(); await page.waitForTimeout(250);
+    const hover = await buy.evaluate(el => ({ background: getComputedStyle(el).backgroundColor, transition: getComputedStyle(el).transitionDuration }));
+    check('Mua ngay có hover và transition', hover.background !== normal && hover.transition.includes('0.2s'), { normal, ...hover });
     result.hover = { normal, ...hover };
     await shot(page, 'sau/trang-thai-hover', '.product-card');
     await page.goto(url);
     let focusSteps=0;
-    while (focusSteps++ < 20) { await page.keyboard.press('Tab'); if (await summary.evaluate(el => document.activeElement === el)) break; }
-    const focus = await summary.evaluate(el => ({ active: document.activeElement === el, visible: el.matches(':focus-visible'), outlineWidth: getComputedStyle(el).outlineWidth, outlineStyle: getComputedStyle(el).outlineStyle, outlineColor: getComputedStyle(el).outlineColor }));
-    check('Tab và focus-visible', focus.active && focus.visible && focus.outlineWidth === '3px', focus);
+    while (focusSteps++ < 20) { await page.keyboard.press('Tab'); if (await buy.evaluate(el => document.activeElement === el)) break; }
+    const focus = await buy.evaluate(el => ({ active: document.activeElement === el, visible: el.matches(':focus-visible'), outlineWidth: getComputedStyle(el).outlineWidth, outlineStyle: getComputedStyle(el).outlineStyle, outlineColor: getComputedStyle(el).outlineColor }));
+    check('Tab và focus-visible trên Mua ngay', focus.active && focus.visible && focus.outlineWidth === '3px', focus);
     result.focus = focus;
     await page.mouse.move(0, 0); await page.waitForTimeout(250);
     await shot(page, 'sau/trang-thai-focus', '.product-card');
-    await page.keyboard.press('Enter');
-    check('Enter mở chi tiết', await page.locator('details').first().getAttribute('open') !== null, 'details[open]');
-    await shot(page, 'sau/mo-thong-tin', '.product-card');
     await page.keyboard.press('Space');
-    check('Space đóng chi tiết', await page.locator('details').first().getAttribute('open') === null, 'Không có thuộc tính open');
-    const imageHref = await page.locator('.product-image').first().getAttribute('href');
-    await page.locator('.product-image').first().click();
-    check('Bấm ảnh mở SVG', page.url().endsWith(imageHref) && (await page.locator('svg').count()) === 1, imageHref);
+    check('CTA minh họa không gửi đơn hoặc mở rộng thẻ', page.url() === url && JSON.stringify(await relativePositions()) === JSON.stringify(layoutBefore), 'Nút type=button, chưa có JavaScript đặt hàng');
+    await page.keyboard.press('Tab');
+    const detailFocus = await page.locator('.btn-detail').first().evaluate(el => document.activeElement === el && el.matches(':focus-visible'));
+    check('Tab tới liên kết Xem chi tiết', detailFocus, detailFocus);
+    await Promise.all([page.waitForURL('**/' + detailLinks[0]), page.keyboard.press('Enter')]);
+    check('Enter mở đúng trang chi tiết', page.url().endsWith(detailLinks[0]) && (await page.locator('h1').textContent()).includes('Tinh chất'), detailLinks[0]);
+    await page.getByRole('link', { name: '← Quay lại danh sách' }).click();
+    const layoutAfter = await relativePositions();
+    check('Đi chi tiết và quay lại không kéo giãn hàng', JSON.stringify(layoutAfter) === JSON.stringify(layoutBefore), { before: layoutBefore, after: layoutAfter });
+    result.revisionAfter = { inlineDetails: await page.locator('details').count(), cards: layoutAfter };
+    await page.mouse.move(0, 0); await page.waitForTimeout(250);
+    await shot(page, 'dieu-chinh-giao-dien/sau-khoi-phuc-cta', '.product-grid');
+    result.detailViewports = [];
+    for (const href of detailLinks) {
+      for (const width of [1366, 768, 390, 320]) {
+        await page.setViewportSize({ width, height: 900 });
+        const response=await page.goto(new URL(href, url).href);
+        const detail=await page.evaluate(() => ({
+          viewport: innerWidth, documentWidth: document.documentElement.scrollWidth,
+          title: document.querySelector('h1').textContent,
+          imageLoaded: document.images.length === 1 && document.images[0].complete && document.images[0].naturalWidth > 0,
+          specs: document.querySelectorAll('.product-specs > div').length,
+          stylesheet: document.querySelector('link[rel=stylesheet]').getAttribute('href'),
+          hasBuy: document.querySelector('.buy-button')?.textContent.trim() === 'Mua ngay',
+          columns: getComputedStyle(document.querySelector('.product-detail-layout')).gridTemplateColumns.split(' ').length,
+          scriptCount: document.scripts.length,
+          ids: [...document.querySelectorAll('[id]')].map(el=>el.id)
+        }));
+        detail.path=href; result.detailViewports.push(detail);
+        check(`Chi tiết ${href} tại ${width}px`, response.status()===200 && detail.documentWidth===width && detail.imageLoaded && detail.columns===(width<768?1:2), detail);
+        check(`Nội dung ${href} tại ${width}px`, detail.specs===4 && detail.hasBuy && detail.scriptCount===0 && detail.stylesheet==='../css/style.css' && new Set(detail.ids).size===detail.ids.length, detail);
+        const localLinks=await page.locator('a[href]').evaluateAll(nodes=>nodes.map(a=>a.getAttribute('href')).filter(h=>!h.startsWith('https://') && !h.startsWith('#')));
+        for (const target of localLinks) {
+          const file=path.resolve(root,path.dirname(href),target.split('#')[0]);
+          assert.ok(file.startsWith(root+path.sep)); await fs.stat(file);
+        }
+        if (href===detailLinks[0] && [1366,390].includes(width)) await shot(page, `sau/chi-tiet-${width}`);
+      }
+      await page.goto(pathToFileURL(path.join(root,href)).href);
+      check(`Mở file chi tiết ${href}`, await page.locator('img').evaluate(el=>el.complete && el.naturalWidth>0), href);
+    }
+    await page.goto(new URL(detailLinks[0],url).href);
+    await page.getByRole('link', { name: 'Mở ảnh gốc', exact: true }).click();
+    check('Trang chi tiết mở ảnh gốc SVG', page.url().endsWith('.svg') && await page.locator('svg').count()===1, 'SVG cục bộ');
+    await page.setViewportSize({ width: 1366, height: 900 });
     await page.goto(url);
     const prices = page.locator('.product-prices').first();
     const measureFlex = () => prices.evaluate(el => {
@@ -182,15 +245,10 @@ async function main() {
     result.experiments.noGrid = await page.locator('.product-card').first().evaluate(el => ({ width: el.getBoundingClientRect().width, gridDisplay: getComputedStyle(document.querySelector('.product-grid')).display }));
     await page.goto(url);
     await page.emulateMedia({ reducedMotion: 'reduce' });
-    const reduced = await summary.evaluate(el => getComputedStyle(el).transitionDuration);
+    const reduced = await buy.evaluate(el => getComputedStyle(el).transitionDuration);
     check('Giảm chuyển động', reduced === '0s', reduced);
     await page.emulateMedia({ reducedMotion: 'no-preference' });
     await page.setViewportSize({ width: 390, height: 900 });
-    await page.goto(url);
-    await page.locator('summary').first().click();
-    const openedMobile = await metrics(page);
-    check('Mở thông tin trên điện thoại', openedMobile.documentWidth === 390 && openedMobile.overflowCards === 0, openedMobile);
-    await shot(page, 'sau/chi-tiet-dien-thoai', '.product-card');
     await page.goto(url);
     // Ảnh đối chiếu cùng một bản HTML, chỉ ghi đè padding tạm trong trình duyệt.
     await page.locator('.product-info').evaluateAll(nodes => nodes.forEach(el => el.style.padding = '14px'));
@@ -204,7 +262,7 @@ async function main() {
       oldPriceBefore: contrast('#858585', '#ffffff'),
       oldPriceAfter: contrast('#58655b', '#ffffff'),
       priceAfter: contrast('#a83e32', '#ffffff'),
-      summaryText: contrast('#ffffff', '#315c43'),
+      buyButtonText: contrast('#ffffff', '#315c43'),
     };
     check('Tương phản chữ đã chỉnh', Object.entries(result.contrast).filter(([k]) => k !== 'oldPriceBefore').every(([, value]) => value >= 4.5), result.contrast);
     check('Không lỗi thực thi hoặc tải tài nguyên', failedRequests.length === 0 && runtimeErrors.length === 0, { failedRequests, runtimeErrors });
@@ -219,8 +277,8 @@ async function main() {
         await ep.setViewportSize({ width, height: 900 }); await ep.goto(url);
         const m=await metrics(ep); result.edge.viewports.push(m);
         check(`Edge ${width}px`, m.documentWidth === width && m.images.every(i => i.loaded) && m.columns === (width === 390 ? 1 : 4), m);
-        await ep.locator('summary').first().click();
-        check(`Edge mở thông tin ${width}px`, await ep.locator('details').first().getAttribute('open') !== null, true);
+        await ep.locator('.btn-detail').first().click();
+        check(`Edge mở trang chi tiết ${width}px`, (await ep.locator('h1').textContent()).includes('Tinh chất') && await ep.locator('img').evaluate(el=>el.complete && el.naturalWidth>0) && await ep.evaluate(()=>document.documentElement.scrollWidth===innerWidth), true);
       }
       await edge.close();
     }

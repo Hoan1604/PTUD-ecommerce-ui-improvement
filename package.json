@@ -1,8 +1,12 @@
 {
   "name": "song-xanh-buoi-2",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "description": "Công cụ kiểm tra tùy chọn cho bài thực hành HTML5 và CSS3",
-  "scripts": { "test": "node tools/kiem-tra.cjs" },
-  "devDependencies": { "playwright": "1.62.1" }
+  "scripts": {
+    "test": "node tools/kiem-tra.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
 }

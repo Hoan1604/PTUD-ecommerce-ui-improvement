@@ -14,10 +14,10 @@
         288
       ],
       "cardHeights": [
-        589.98,
-        562.98,
-        538.98,
-        562.98
+        645.98,
+        618.98,
+        594.98,
+        618.98
       ],
       "infoPadding": "16px",
       "categoryFont": "12px",
@@ -72,10 +72,10 @@
         328
       ],
       "cardHeights": [
-        578.98,
-        602.98,
-        578.98,
-        602.98
+        634.98,
+        658.98,
+        634.98,
+        658.98
       ],
       "infoPadding": "16px",
       "categoryFont": "12px",
@@ -130,10 +130,10 @@
         358
       ],
       "cardHeights": [
-        608.98,
-        608.98,
-        608.98,
-        632.98
+        664.98,
+        664.98,
+        664.98,
+        688.98
       ],
       "infoPadding": "16px",
       "categoryFont": "12px",
@@ -188,10 +188,10 @@
         567
       ],
       "cardHeights": [
-        817.98,
-        817.98,
-        817.98,
-        817.98
+        873.98,
+        873.98,
+        873.98,
+        873.98
       ],
       "infoPadding": "16px",
       "categoryFont": "12px",
@@ -246,10 +246,10 @@
         270
       ],
       "cardHeights": [
-        570.16,
-        570.16,
-        570.16,
-        570.16
+        626.16,
+        626.16,
+        626.16,
+        626.16
       ],
       "infoPadding": "20px",
       "categoryFont": "12px",
@@ -304,10 +304,10 @@
         354
       ],
       "cardHeights": [
-        631.77,
-        631.77,
-        631.77,
-        631.77
+        687.77,
+        687.77,
+        687.77,
+        687.77
       ],
       "infoPadding": "20px",
       "categoryFont": "12px",
@@ -362,10 +362,10 @@
         481.5
       ],
       "cardHeights": [
-        759.27,
-        759.27,
-        759.27,
-        759.27
+        815.27,
+        815.27,
+        815.27,
+        815.27
       ],
       "infoPadding": "20px",
       "categoryFont": "12px",
@@ -420,10 +420,10 @@
         229.5
       ],
       "cardHeights": [
-        529.66,
-        529.66,
-        529.66,
-        529.66
+        585.66,
+        585.66,
+        585.66,
+        585.66
       ],
       "infoPadding": "20px",
       "categoryFont": "12px",
@@ -478,10 +478,10 @@
         263.5
       ],
       "cardHeights": [
-        563.66,
-        563.66,
-        563.66,
-        563.66
+        619.66,
+        619.66,
+        619.66,
+        619.66
       ],
       "infoPadding": "20px",
       "categoryFont": "12px",
@@ -541,10 +541,10 @@
           288
         ],
         "cardHeights": [
-          589.98,
-          562.98,
-          538.98,
-          562.98
+          645.98,
+          618.98,
+          594.98,
+          618.98
         ],
         "infoPadding": "16px",
         "categoryFont": "12px",
@@ -642,10 +642,10 @@
           328
         ],
         "cardHeights": [
-          578.98,
-          602.98,
-          578.98,
-          602.98
+          634.98,
+          658.98,
+          634.98,
+          658.98
         ],
         "infoPadding": "16px",
         "categoryFont": "12px",
@@ -743,10 +743,10 @@
           358
         ],
         "cardHeights": [
-          608.98,
-          608.98,
-          608.98,
-          632.98
+          664.98,
+          664.98,
+          664.98,
+          688.98
         ],
         "infoPadding": "16px",
         "categoryFont": "12px",
@@ -844,10 +844,10 @@
           567
         ],
         "cardHeights": [
-          817.98,
-          817.98,
-          817.98,
-          817.98
+          873.98,
+          873.98,
+          873.98,
+          873.98
         ],
         "infoPadding": "16px",
         "categoryFont": "12px",
@@ -945,10 +945,10 @@
           270
         ],
         "cardHeights": [
-          570.16,
-          570.16,
-          570.16,
-          570.16
+          626.16,
+          626.16,
+          626.16,
+          626.16
         ],
         "infoPadding": "20px",
         "categoryFont": "12px",
@@ -1046,10 +1046,10 @@
           354
         ],
         "cardHeights": [
-          631.77,
-          631.77,
-          631.77,
-          631.77
+          687.77,
+          687.77,
+          687.77,
+          687.77
         ],
         "infoPadding": "20px",
         "categoryFont": "12px",
@@ -1147,10 +1147,10 @@
           481.5
         ],
         "cardHeights": [
-          759.27,
-          759.27,
-          759.27,
-          759.27
+          815.27,
+          815.27,
+          815.27,
+          815.27
         ],
         "infoPadding": "20px",
         "categoryFont": "12px",
@@ -1248,10 +1248,10 @@
           229.5
         ],
         "cardHeights": [
-          529.66,
-          529.66,
-          529.66,
-          529.66
+          585.66,
+          585.66,
+          585.66,
+          585.66
         ],
         "infoPadding": "20px",
         "categoryFont": "12px",
@@ -1349,10 +1349,10 @@
           263.5
         ],
         "cardHeights": [
-          563.66,
-          563.66,
-          563.66,
-          563.66
+          619.66,
+          619.66,
+          619.66,
+          619.66
         ],
         "infoPadding": "20px",
         "categoryFont": "12px",
@@ -1468,36 +1468,36 @@
             "href": "#gioi-thieu"
           },
           {
-            "text": "Mở ảnh minh họa tinh chất dưỡng da thiên nhiên",
-            "href": "images/tinh-chat-duong-da.svg"
+            "text": "Xem chi tiết tinh chất dưỡng da thiên nhiên",
+            "href": "san-pham/tinh-chat.html"
           },
           {
-            "text": "Mở ảnh minh họa tinh chất dưỡng da thiên nhiên",
-            "href": "images/tinh-chat-duong-da.svg"
+            "text": "Xem chi tiết",
+            "href": "san-pham/tinh-chat.html"
           },
           {
-            "text": "Mở ảnh minh họa sữa rửa mặt dịu nhẹ",
-            "href": "images/sua-rua-mat.svg"
+            "text": "Xem chi tiết sữa rửa mặt dịu nhẹ",
+            "href": "san-pham/sua-rua-mat.html"
           },
           {
-            "text": "Mở ảnh minh họa sữa rửa mặt dịu nhẹ",
-            "href": "images/sua-rua-mat.svg"
+            "text": "Xem chi tiết",
+            "href": "san-pham/sua-rua-mat.html"
           },
           {
-            "text": "Mở ảnh minh họa kem dưỡng ẩm thực vật",
-            "href": "images/kem-duong-am.svg"
+            "text": "Xem chi tiết kem dưỡng ẩm thực vật",
+            "href": "san-pham/kem-duong.html"
           },
           {
-            "text": "Mở ảnh minh họa kem dưỡng ẩm thực vật",
-            "href": "images/kem-duong-am.svg"
+            "text": "Xem chi tiết",
+            "href": "san-pham/kem-duong.html"
           },
           {
-            "text": "Mở ảnh minh họa xà phòng thiên nhiên",
-            "href": "images/xa-phong-thien-nhien.svg"
+            "text": "Xem chi tiết xà phòng thiên nhiên",
+            "href": "san-pham/xa-phong.html"
           },
           {
-            "text": "Mở ảnh minh họa xà phòng thiên nhiên",
-            "href": "images/xa-phong-thien-nhien.svg"
+            "text": "Xem chi tiết",
+            "href": "san-pham/xa-phong.html"
           },
           {
             "text": "Tham khảo website Cỏ Mềm",
@@ -1531,44 +1531,44 @@
       "detail": "Về Sống Xanh"
     },
     {
-      "name": "Tệp images/tinh-chat-duong-da.svg",
+      "name": "Tệp san-pham/tinh-chat.html",
       "pass": true,
-      "detail": "Mở ảnh minh họa tinh chất dưỡng da thiên nhiên"
+      "detail": "Xem chi tiết tinh chất dưỡng da thiên nhiên"
     },
     {
-      "name": "Tệp images/tinh-chat-duong-da.svg",
+      "name": "Tệp san-pham/tinh-chat.html",
       "pass": true,
-      "detail": "Mở ảnh minh họa tinh chất dưỡng da thiên nhiên"
+      "detail": "Xem chi tiết"
     },
     {
-      "name": "Tệp images/sua-rua-mat.svg",
+      "name": "Tệp san-pham/sua-rua-mat.html",
       "pass": true,
-      "detail": "Mở ảnh minh họa sữa rửa mặt dịu nhẹ"
+      "detail": "Xem chi tiết sữa rửa mặt dịu nhẹ"
     },
     {
-      "name": "Tệp images/sua-rua-mat.svg",
+      "name": "Tệp san-pham/sua-rua-mat.html",
       "pass": true,
-      "detail": "Mở ảnh minh họa sữa rửa mặt dịu nhẹ"
+      "detail": "Xem chi tiết"
     },
     {
-      "name": "Tệp images/kem-duong-am.svg",
+      "name": "Tệp san-pham/kem-duong.html",
       "pass": true,
-      "detail": "Mở ảnh minh họa kem dưỡng ẩm thực vật"
+      "detail": "Xem chi tiết kem dưỡng ẩm thực vật"
     },
     {
-      "name": "Tệp images/kem-duong-am.svg",
+      "name": "Tệp san-pham/kem-duong.html",
       "pass": true,
-      "detail": "Mở ảnh minh họa kem dưỡng ẩm thực vật"
+      "detail": "Xem chi tiết"
     },
     {
-      "name": "Tệp images/xa-phong-thien-nhien.svg",
+      "name": "Tệp san-pham/xa-phong.html",
       "pass": true,
-      "detail": "Mở ảnh minh họa xà phòng thiên nhiên"
+      "detail": "Xem chi tiết xà phòng thiên nhiên"
     },
     {
-      "name": "Tệp images/xa-phong-thien-nhien.svg",
+      "name": "Tệp san-pham/xa-phong.html",
       "pass": true,
-      "detail": "Mở ảnh minh họa xà phòng thiên nhiên"
+      "detail": "Xem chi tiết"
     },
     {
       "name": "Đích #dau-trang",
@@ -1586,16 +1586,56 @@
       "detail": "dau-trang"
     },
     {
-      "name": "Hover và transition",
+      "name": "Giữ bốn nút Mua ngay và có ghi chú minh họa",
+      "pass": true,
+      "detail": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "text": "Mua ngay",
+          "note": "demo-note"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "text": "Mua ngay",
+          "note": "demo-note"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "text": "Mua ngay",
+          "note": "demo-note"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "text": "Mua ngay",
+          "note": "demo-note"
+        }
+      ]
+    },
+    {
+      "name": "Danh sách không còn khối sổ xuống",
+      "pass": true,
+      "detail": [
+        "san-pham/tinh-chat.html",
+        "san-pham/sua-rua-mat.html",
+        "san-pham/kem-duong.html",
+        "san-pham/xa-phong.html"
+      ]
+    },
+    {
+      "name": "Mua ngay có hover và transition",
       "pass": true,
       "detail": {
         "normal": "rgb(49, 92, 67)",
         "background": "rgb(36, 72, 50)",
-        "transition": "0.2s, 0.2s"
+        "transition": "0.2s, 0.2s, 0.2s"
       }
     },
     {
-      "name": "Tab và focus-visible",
+      "name": "Tab và focus-visible trên Mua ngay",
       "pass": true,
       "detail": {
         "active": true,
@@ -1606,86 +1646,867 @@
       }
     },
     {
-      "name": "Enter mở chi tiết",
+      "name": "CTA minh họa không gửi đơn hoặc mở rộng thẻ",
       "pass": true,
-      "detail": "details[open]"
+      "detail": "Nút type=button, chưa có JavaScript đặt hàng"
     },
     {
-      "name": "Space đóng chi tiết",
+      "name": "Tab tới liên kết Xem chi tiết",
       "pass": true,
-      "detail": "Không có thuộc tính open"
+      "detail": true
     },
     {
-      "name": "Bấm ảnh mở SVG",
+      "name": "Enter mở đúng trang chi tiết",
       "pass": true,
-      "detail": "images/tinh-chat-duong-da.svg"
+      "detail": "san-pham/tinh-chat.html"
+    },
+    {
+      "name": "Đi chi tiết và quay lại không kéo giãn hàng",
+      "pass": true,
+      "detail": {
+        "before": [
+          {
+            "height": 619.66,
+            "priceOffset": 425.47,
+            "descriptionToPriceGap": 16
+          },
+          {
+            "height": 619.66,
+            "priceOffset": 425.47,
+            "descriptionToPriceGap": 16
+          },
+          {
+            "height": 619.66,
+            "priceOffset": 425.47,
+            "descriptionToPriceGap": 16
+          },
+          {
+            "height": 619.66,
+            "priceOffset": 425.47,
+            "descriptionToPriceGap": 16
+          }
+        ],
+        "after": [
+          {
+            "height": 619.66,
+            "priceOffset": 425.47,
+            "descriptionToPriceGap": 16
+          },
+          {
+            "height": 619.66,
+            "priceOffset": 425.47,
+            "descriptionToPriceGap": 16
+          },
+          {
+            "height": 619.66,
+            "priceOffset": 425.47,
+            "descriptionToPriceGap": 16
+          },
+          {
+            "height": 619.66,
+            "priceOffset": 425.47,
+            "descriptionToPriceGap": 16
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/tinh-chat.html tại 1366px",
+      "pass": true,
+      "detail": {
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "title": "Tinh chất dưỡng da thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/tinh-chat.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/tinh-chat.html tại 1366px",
+      "pass": true,
+      "detail": {
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "title": "Tinh chất dưỡng da thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/tinh-chat.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/tinh-chat.html tại 768px",
+      "pass": true,
+      "detail": {
+        "viewport": 768,
+        "documentWidth": 768,
+        "title": "Tinh chất dưỡng da thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/tinh-chat.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/tinh-chat.html tại 768px",
+      "pass": true,
+      "detail": {
+        "viewport": 768,
+        "documentWidth": 768,
+        "title": "Tinh chất dưỡng da thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/tinh-chat.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/tinh-chat.html tại 390px",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "title": "Tinh chất dưỡng da thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/tinh-chat.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/tinh-chat.html tại 390px",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "title": "Tinh chất dưỡng da thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/tinh-chat.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/tinh-chat.html tại 320px",
+      "pass": true,
+      "detail": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "title": "Tinh chất dưỡng da thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/tinh-chat.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/tinh-chat.html tại 320px",
+      "pass": true,
+      "detail": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "title": "Tinh chất dưỡng da thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/tinh-chat.html"
+      }
+    },
+    {
+      "name": "Mở file chi tiết san-pham/tinh-chat.html",
+      "pass": true,
+      "detail": "san-pham/tinh-chat.html"
+    },
+    {
+      "name": "Chi tiết san-pham/sua-rua-mat.html tại 1366px",
+      "pass": true,
+      "detail": {
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "title": "Sữa rửa mặt dịu nhẹ",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/sua-rua-mat.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/sua-rua-mat.html tại 1366px",
+      "pass": true,
+      "detail": {
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "title": "Sữa rửa mặt dịu nhẹ",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/sua-rua-mat.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/sua-rua-mat.html tại 768px",
+      "pass": true,
+      "detail": {
+        "viewport": 768,
+        "documentWidth": 768,
+        "title": "Sữa rửa mặt dịu nhẹ",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/sua-rua-mat.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/sua-rua-mat.html tại 768px",
+      "pass": true,
+      "detail": {
+        "viewport": 768,
+        "documentWidth": 768,
+        "title": "Sữa rửa mặt dịu nhẹ",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/sua-rua-mat.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/sua-rua-mat.html tại 390px",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "title": "Sữa rửa mặt dịu nhẹ",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/sua-rua-mat.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/sua-rua-mat.html tại 390px",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "title": "Sữa rửa mặt dịu nhẹ",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/sua-rua-mat.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/sua-rua-mat.html tại 320px",
+      "pass": true,
+      "detail": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "title": "Sữa rửa mặt dịu nhẹ",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/sua-rua-mat.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/sua-rua-mat.html tại 320px",
+      "pass": true,
+      "detail": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "title": "Sữa rửa mặt dịu nhẹ",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/sua-rua-mat.html"
+      }
+    },
+    {
+      "name": "Mở file chi tiết san-pham/sua-rua-mat.html",
+      "pass": true,
+      "detail": "san-pham/sua-rua-mat.html"
+    },
+    {
+      "name": "Chi tiết san-pham/kem-duong.html tại 1366px",
+      "pass": true,
+      "detail": {
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "title": "Kem dưỡng ẩm thực vật",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/kem-duong.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/kem-duong.html tại 1366px",
+      "pass": true,
+      "detail": {
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "title": "Kem dưỡng ẩm thực vật",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/kem-duong.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/kem-duong.html tại 768px",
+      "pass": true,
+      "detail": {
+        "viewport": 768,
+        "documentWidth": 768,
+        "title": "Kem dưỡng ẩm thực vật",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/kem-duong.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/kem-duong.html tại 768px",
+      "pass": true,
+      "detail": {
+        "viewport": 768,
+        "documentWidth": 768,
+        "title": "Kem dưỡng ẩm thực vật",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/kem-duong.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/kem-duong.html tại 390px",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "title": "Kem dưỡng ẩm thực vật",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/kem-duong.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/kem-duong.html tại 390px",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "title": "Kem dưỡng ẩm thực vật",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/kem-duong.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/kem-duong.html tại 320px",
+      "pass": true,
+      "detail": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "title": "Kem dưỡng ẩm thực vật",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/kem-duong.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/kem-duong.html tại 320px",
+      "pass": true,
+      "detail": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "title": "Kem dưỡng ẩm thực vật",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/kem-duong.html"
+      }
+    },
+    {
+      "name": "Mở file chi tiết san-pham/kem-duong.html",
+      "pass": true,
+      "detail": "san-pham/kem-duong.html"
+    },
+    {
+      "name": "Chi tiết san-pham/xa-phong.html tại 1366px",
+      "pass": true,
+      "detail": {
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "title": "Xà phòng thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/xa-phong.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/xa-phong.html tại 1366px",
+      "pass": true,
+      "detail": {
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "title": "Xà phòng thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/xa-phong.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/xa-phong.html tại 768px",
+      "pass": true,
+      "detail": {
+        "viewport": 768,
+        "documentWidth": 768,
+        "title": "Xà phòng thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/xa-phong.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/xa-phong.html tại 768px",
+      "pass": true,
+      "detail": {
+        "viewport": 768,
+        "documentWidth": 768,
+        "title": "Xà phòng thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 2,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/xa-phong.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/xa-phong.html tại 390px",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "title": "Xà phòng thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/xa-phong.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/xa-phong.html tại 390px",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "title": "Xà phòng thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/xa-phong.html"
+      }
+    },
+    {
+      "name": "Chi tiết san-pham/xa-phong.html tại 320px",
+      "pass": true,
+      "detail": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "title": "Xà phòng thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/xa-phong.html"
+      }
+    },
+    {
+      "name": "Nội dung san-pham/xa-phong.html tại 320px",
+      "pass": true,
+      "detail": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "title": "Xà phòng thiên nhiên",
+        "imageLoaded": true,
+        "specs": 4,
+        "stylesheet": "../css/style.css",
+        "hasBuy": true,
+        "columns": 1,
+        "scriptCount": 0,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "detail-title",
+          "demo-note",
+          "description-title",
+          "specs-title"
+        ],
+        "path": "san-pham/xa-phong.html"
+      }
+    },
+    {
+      "name": "Mở file chi tiết san-pham/xa-phong.html",
+      "pass": true,
+      "detail": "san-pham/xa-phong.html"
+    },
+    {
+      "name": "Trang chi tiết mở ảnh gốc SVG",
+      "pass": true,
+      "detail": "SVG cục bộ"
     },
     {
       "name": "Giảm chuyển động",
       "pass": true,
       "detail": "0s"
-    },
-    {
-      "name": "Mở thông tin trên điện thoại",
-      "pass": true,
-      "detail": {
-        "viewport": 390,
-        "documentWidth": 390,
-        "columns": 1,
-        "gap": "20px",
-        "cardWidths": [
-          358,
-          358,
-          358,
-          358
-        ],
-        "cardHeights": [
-          798.97,
-          608.98,
-          608.98,
-          632.98
-        ],
-        "infoPadding": "16px",
-        "categoryFont": "12px",
-        "oldPriceFont": "15px",
-        "oldPriceColor": "rgb(88, 101, 91)",
-        "priceColor": "rgb(168, 62, 50)",
-        "cardBorder": "1px",
-        "cardRadius": "14px",
-        "boxSizing": "border-box",
-        "images": [
-          {
-            "src": "images/tinh-chat-duong-da.svg",
-            "loaded": true,
-            "alt": "Chai tinh chất dưỡng da màu xanh nhạt",
-            "width": 356,
-            "height": 356
-          },
-          {
-            "src": "images/sua-rua-mat.svg",
-            "loaded": true,
-            "alt": "Chai sữa rửa mặt màu kem",
-            "width": 356,
-            "height": 356
-          },
-          {
-            "src": "images/kem-duong-am.svg",
-            "loaded": true,
-            "alt": "Hũ kem dưỡng ẩm màu trắng trên nền xanh lá nhạt",
-            "width": 356,
-            "height": 356
-          },
-          {
-            "src": "images/xa-phong-thien-nhien.svg",
-            "loaded": true,
-            "alt": "Bánh xà phòng thiên nhiên màu xanh lá nhạt",
-            "width": 356,
-            "height": 356
-          }
-        ],
-        "overflowCards": 0,
-        "productCount": 4
-      }
     },
     {
       "name": "Mở trực tiếp file HTML",
@@ -1702,10 +2523,10 @@
           358
         ],
         "cardHeights": [
-          608.98,
-          608.98,
-          608.98,
-          632.98
+          664.98,
+          664.98,
+          664.98,
+          688.98
         ],
         "infoPadding": "16px",
         "categoryFont": "12px",
@@ -1756,7 +2577,7 @@
         "oldPriceBefore": 3.69,
         "oldPriceAfter": 6.13,
         "priceAfter": 6.18,
-        "summaryText": 7.66
+        "buyButtonText": 7.66
       }
     },
     {
@@ -1787,10 +2608,10 @@
           263.5
         ],
         "cardHeights": [
-          563.66,
-          563.66,
-          563.66,
-          563.66
+          619.66,
+          619.66,
+          619.66,
+          619.66
         ],
         "infoPadding": "20px",
         "categoryFont": "12px",
@@ -1835,7 +2656,7 @@
       }
     },
     {
-      "name": "Edge mở thông tin 1366px",
+      "name": "Edge mở trang chi tiết 1366px",
       "pass": true,
       "detail": true
     },
@@ -1854,10 +2675,10 @@
           358
         ],
         "cardHeights": [
-          608.98,
-          608.98,
-          608.98,
-          632.98
+          664.98,
+          664.98,
+          664.98,
+          688.98
         ],
         "infoPadding": "16px",
         "categoryFont": "12px",
@@ -1902,7 +2723,7 @@
       }
     },
     {
-      "name": "Edge mở thông tin 390px",
+      "name": "Edge mở trang chi tiết 390px",
       "pass": true,
       "detail": true
     }
@@ -1941,10 +2762,10 @@
         549
       ],
       "cardHeights": [
-        826.77,
-        826.77,
-        826.77,
-        826.77
+        882.77,
+        882.77,
+        882.77,
+        882.77
       ],
       "infoPadding": "20px",
       "categoryFont": "12px",
@@ -1999,10 +2820,10 @@
         358.66
       ],
       "cardHeights": [
-        636.44,
-        636.44,
-        636.44,
-        636.42
+        692.44,
+        692.44,
+        692.44,
+        692.42
       ],
       "infoPadding": "20px",
       "categoryFont": "12px",
@@ -2169,6 +2990,21 @@
       "productCount": 4
     }
   ],
+  "revisionBefore": {
+    "openDetails": 1,
+    "heights": [
+      774.44,
+      774.44,
+      774.44,
+      774.44
+    ],
+    "descriptionToPriceGaps": [
+      16,
+      226.78,
+      226.78,
+      226.78
+    ]
+  },
   "structure": {
     "main": 1,
     "h1": 1,
@@ -2199,36 +3035,36 @@
         "href": "#gioi-thieu"
       },
       {
-        "text": "Mở ảnh minh họa tinh chất dưỡng da thiên nhiên",
-        "href": "images/tinh-chat-duong-da.svg"
+        "text": "Xem chi tiết tinh chất dưỡng da thiên nhiên",
+        "href": "san-pham/tinh-chat.html"
       },
       {
-        "text": "Mở ảnh minh họa tinh chất dưỡng da thiên nhiên",
-        "href": "images/tinh-chat-duong-da.svg"
+        "text": "Xem chi tiết",
+        "href": "san-pham/tinh-chat.html"
       },
       {
-        "text": "Mở ảnh minh họa sữa rửa mặt dịu nhẹ",
-        "href": "images/sua-rua-mat.svg"
+        "text": "Xem chi tiết sữa rửa mặt dịu nhẹ",
+        "href": "san-pham/sua-rua-mat.html"
       },
       {
-        "text": "Mở ảnh minh họa sữa rửa mặt dịu nhẹ",
-        "href": "images/sua-rua-mat.svg"
+        "text": "Xem chi tiết",
+        "href": "san-pham/sua-rua-mat.html"
       },
       {
-        "text": "Mở ảnh minh họa kem dưỡng ẩm thực vật",
-        "href": "images/kem-duong-am.svg"
+        "text": "Xem chi tiết kem dưỡng ẩm thực vật",
+        "href": "san-pham/kem-duong.html"
       },
       {
-        "text": "Mở ảnh minh họa kem dưỡng ẩm thực vật",
-        "href": "images/kem-duong-am.svg"
+        "text": "Xem chi tiết",
+        "href": "san-pham/kem-duong.html"
       },
       {
-        "text": "Mở ảnh minh họa xà phòng thiên nhiên",
-        "href": "images/xa-phong-thien-nhien.svg"
+        "text": "Xem chi tiết xà phòng thiên nhiên",
+        "href": "san-pham/xa-phong.html"
       },
       {
-        "text": "Mở ảnh minh họa xà phòng thiên nhiên",
-        "href": "images/xa-phong-thien-nhien.svg"
+        "text": "Xem chi tiết",
+        "href": "san-pham/xa-phong.html"
       },
       {
         "text": "Tham khảo website Cỏ Mềm",
@@ -2240,10 +3076,16 @@
       }
     ]
   },
+  "detailLinks": [
+    "san-pham/tinh-chat.html",
+    "san-pham/sua-rua-mat.html",
+    "san-pham/kem-duong.html",
+    "san-pham/xa-phong.html"
+  ],
   "hover": {
     "normal": "rgb(49, 92, 67)",
     "background": "rgb(36, 72, 50)",
-    "transition": "0.2s, 0.2s"
+    "transition": "0.2s, 0.2s, 0.2s"
   },
   "focus": {
     "active": true,
@@ -2252,11 +3094,358 @@
     "outlineStyle": "solid",
     "outlineColor": "rgb(27, 98, 165)"
   },
+  "revisionAfter": {
+    "inlineDetails": 0,
+    "cards": [
+      {
+        "height": 619.66,
+        "priceOffset": 425.47,
+        "descriptionToPriceGap": 16
+      },
+      {
+        "height": 619.66,
+        "priceOffset": 425.47,
+        "descriptionToPriceGap": 16
+      },
+      {
+        "height": 619.66,
+        "priceOffset": 425.47,
+        "descriptionToPriceGap": 16
+      },
+      {
+        "height": 619.66,
+        "priceOffset": 425.47,
+        "descriptionToPriceGap": 16
+      }
+    ]
+  },
+  "detailViewports": [
+    {
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "title": "Tinh chất dưỡng da thiên nhiên",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 2,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/tinh-chat.html"
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Tinh chất dưỡng da thiên nhiên",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 2,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/tinh-chat.html"
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Tinh chất dưỡng da thiên nhiên",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 1,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/tinh-chat.html"
+    },
+    {
+      "viewport": 320,
+      "documentWidth": 320,
+      "title": "Tinh chất dưỡng da thiên nhiên",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 1,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/tinh-chat.html"
+    },
+    {
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "title": "Sữa rửa mặt dịu nhẹ",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 2,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/sua-rua-mat.html"
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Sữa rửa mặt dịu nhẹ",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 2,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/sua-rua-mat.html"
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Sữa rửa mặt dịu nhẹ",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 1,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/sua-rua-mat.html"
+    },
+    {
+      "viewport": 320,
+      "documentWidth": 320,
+      "title": "Sữa rửa mặt dịu nhẹ",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 1,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/sua-rua-mat.html"
+    },
+    {
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "title": "Kem dưỡng ẩm thực vật",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 2,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/kem-duong.html"
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Kem dưỡng ẩm thực vật",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 2,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/kem-duong.html"
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Kem dưỡng ẩm thực vật",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 1,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/kem-duong.html"
+    },
+    {
+      "viewport": 320,
+      "documentWidth": 320,
+      "title": "Kem dưỡng ẩm thực vật",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 1,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/kem-duong.html"
+    },
+    {
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "title": "Xà phòng thiên nhiên",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 2,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/xa-phong.html"
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "title": "Xà phòng thiên nhiên",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 2,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/xa-phong.html"
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "title": "Xà phòng thiên nhiên",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 1,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/xa-phong.html"
+    },
+    {
+      "viewport": 320,
+      "documentWidth": 320,
+      "title": "Xà phòng thiên nhiên",
+      "imageLoaded": true,
+      "specs": 4,
+      "stylesheet": "../css/style.css",
+      "hasBuy": true,
+      "columns": 1,
+      "scriptCount": 0,
+      "ids": [
+        "dau-trang",
+        "noi-dung",
+        "detail-title",
+        "demo-note",
+        "description-title",
+        "specs-title"
+      ],
+      "path": "san-pham/xa-phong.html"
+    }
+  ],
   "contrast": {
     "oldPriceBefore": 3.69,
     "oldPriceAfter": 6.13,
     "priceAfter": 6.18,
-    "summaryText": 7.66
+    "buyButtonText": 7.66
   },
   "edge": {
     "version": "156.0.4314.58",
@@ -2273,10 +3462,10 @@
           263.5
         ],
         "cardHeights": [
-          563.66,
-          563.66,
-          563.66,
-          563.66
+          619.66,
+          619.66,
+          619.66,
+          619.66
         ],
         "infoPadding": "20px",
         "categoryFont": "12px",
@@ -2331,10 +3520,10 @@
           358
         ],
         "cardHeights": [
-          608.98,
-          608.98,
-          608.98,
-          632.98
+          664.98,
+          664.98,
+          664.98,
+          688.98
         ],
         "infoPadding": "16px",
         "categoryFont": "12px",
@@ -2380,7 +3569,7 @@
     ]
   },
   "summary": {
-    "passed": 58,
+    "passed": 97,
     "failed": 0
   }
 }

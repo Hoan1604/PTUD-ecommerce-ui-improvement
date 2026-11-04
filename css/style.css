@@ -22,7 +22,7 @@ body {
 }
 img { display: block; max-width: 100%; height: auto; }
 a { color: var(--brand-green); text-underline-offset: 4px; }
-a, summary { -webkit-tap-highlight-color: transparent; }
+a, button { -webkit-tap-highlight-color: transparent; }
 :focus-visible { outline: 3px solid #1b62a5; outline-offset: 4px; }
 section, main { scroll-margin-top: 20px; }
 .container { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
@@ -120,30 +120,23 @@ section, main { scroll-margin-top: 20px; }
 .old-price { color: var(--text-muted); font-size: .875rem; line-height: 1.6; white-space: nowrap; }
 .savings { margin: 6px 0 0; color: var(--brand-green); font-size: .8125rem; font-weight: 600; }
 
-/* 6. Tương tác HTML gốc - summary mở và đóng bằng chuột hoặc bàn phím */
-.product-details summary {
-  min-height: 46px; padding: 10px 12px;
+/* 6. Nút Mua ngay kế thừa và liên kết Xem chi tiết */
+.product-actions {
+  display: flex; flex-direction: column;
+  justify-content: flex-start; align-items: stretch; gap: 10px;
+}
+.buy-button, .btn-detail {
+  display: inline-flex; justify-content: center; align-items: center;
+  width: 100%; min-height: 46px; padding: 10px 12px;
   border: 1px solid var(--brand-green); border-radius: 8px;
-  background: var(--brand-green); color: white;
-  font-size: .9375rem; font-weight: 700; cursor: pointer;
-  transition: background-color .2s ease, border-color .2s ease;
+  font: inherit; font-size: .9375rem; font-weight: 700;
+  text-align: center; text-decoration: none; cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
 }
-.product-details summary:hover, .product-details[open] summary {
-  background: var(--brand-green-hover); border-color: var(--brand-green-hover);
-}
-.details-content { padding-top: 14px; font-size: .8125rem; color: var(--text-muted); }
-.details-content p { margin: 10px 0; }
-.product-specs { margin: 0; }
-.product-specs div { margin-bottom: 8px; }
-.product-specs dt { font-weight: 700; color: var(--text-main); }
-.product-specs dd { margin: 0; overflow-wrap: anywhere; }
-.product-card .image-link {
-  display: inline-flex; align-items: center; min-height: 44px;
-  padding: 8px 10px; border: 1px solid #809485; border-radius: 6px;
-  background: #f2f6ef; color: #244832; font-weight: 700;
-  text-decoration: none; transition: background-color .2s ease;
-}
-.product-card .image-link:hover { background: #e3ebdd; }
+.buy-button { background: var(--brand-green); color: white; }
+.buy-button:hover { background: var(--brand-green-hover); border-color: var(--brand-green-hover); }
+.product-card .btn-detail { background: white; color: var(--brand-green); }
+.product-card .btn-detail:hover { background: #edf3e9; border-color: var(--brand-green-hover); }
 .demo-note { margin: 24px 0 0; color: var(--text-muted); font-size: .85rem; text-align: center; }
 
 /* 7. Giới thiệu và footer */
@@ -186,4 +179,31 @@ section, main { scroll-margin-top: 20px; }
     transition-duration: 0s !important;
     animation-duration: 0s !important;
   }
+}
+
+/* 9. Trang chi tiết HTML tĩnh, dùng chung stylesheet với danh sách */
+.detail-main { padding-block: 28px 44px; }
+.breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; padding: 0; list-style: none; font-size: .875rem; }
+.breadcrumbs li + li::before { content: "/"; margin-right: 8px; color: var(--text-muted); }
+.product-detail-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.detail-figure { margin: 0; }
+.detail-figure img { width: 100%; aspect-ratio: 1 / 1; object-fit: contain; border-radius: 14px; }
+.detail-figure figcaption { margin-top: 10px; font-size: .8125rem; color: var(--text-muted); }
+.detail-info { min-width: 0; }
+.detail-info h1 { margin: 0 0 12px; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.3; }
+.detail-info .price-block { margin-block: 20px; }
+.detail-info .product-price { font-size: 1.5rem; }
+.detail-section { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-color); }
+.detail-section h2 { margin: 0 0 12px; font-size: 1.1rem; }
+.detail-section p { margin: 0; color: var(--text-muted); }
+.product-specs { margin: 0; }
+.product-specs > div { display: grid; grid-template-columns: minmax(120px, .8fr) minmax(0, 1.2fr); gap: 12px; padding-block: 8px; border-bottom: 1px solid var(--border-color); }
+.product-specs dt { font-weight: 700; }
+.product-specs dd { margin: 0; color: var(--text-muted); overflow-wrap: anywhere; }
+.detail-links { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 24px; }
+.detail-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.detail-demo { margin: 12px 0 0; color: var(--text-muted); font-size: .875rem; }
+@media (max-width: 767px) {
+  .product-detail-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .detail-main { padding-block: 20px 32px; }
 }

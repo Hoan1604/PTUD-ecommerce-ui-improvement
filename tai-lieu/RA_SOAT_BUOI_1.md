@@ -1,19 +1,18 @@
-# Rà soát sản phẩm Buổi 1
+# Rà soát và quyết định thiết kế
 
 ## Nguồn kế thừa
 
-`BTVNB1_PTUD.zip` do sinh viên cung cấp, commit gốc `a43d5581a9fe3fa6ca2ddd81af50020a3a9e63ef`. Bốn SVG được giữ nguyên nội dung; HTML và CSS được tiếp tục chỉnh trong cùng repository. Bản README và AI_USAGE cũ được giữ tại `ke-thua-buoi1/` để đối chiếu.
+Mã từ BTVNB1_PTUD.zip, commit a43d5581a9fe3fa6ca2ddd81af50020a3a9e63ef. Giữ bốn SVG, tên và hai mức giá; tài liệu cũ nằm trong ke-thua-buoi1. Bài cũ đã có HTML ngữ nghĩa, CSS ngoài, Grid, Flexbox và hover/focus một số thành phần.
 
-Bài cũ đã có header, main, section, article, footer, CSS ngoài, bốn sản phẩm, Grid, Flexbox và hover/focus cho một số thành phần. Các kỹ thuật này được kế thừa; không mô tả chúng là phần hoàn toàn mới ở Buổi 2. File Word mẫu được dùng tham khảo bố cục báo cáo; thông tin sinh viên và dự án thời trang trong mẫu không được đưa vào bài Sống Xanh.
-
-## Những vấn đề được xác nhận
-
-| Quan sát từ mã và trình duyệt | Nguyên nhân | Thay đổi Buổi 2 | Kết quả kiểm tra |
+| Vấn đề có căn cứ | Nguyên nhân | Điều chỉnh | Kết quả |
 |---|---|---|---|
-| 4 ảnh trỏ `href="#"` | Đích điều hướng chỉ là đầu trang | Trỏ đúng các tệp SVG cục bộ | Bấm ảnh mở SVG và nút Back quay về được |
-| 4 nút “Mua ngay” không có xử lý | HTML button chưa gắn hành vi, đã có ghi chú minh họa | Dùng `details/summary` để xem thông tin thực tế trong phạm vi HTML/CSS | Enter và Space mở/đóng; không giả lập giao dịch |
-| 390 px vẫn là 2 cột, mỗi thẻ 175 px | Media query cũ chỉ đổi gap và cỡ chữ, không đổi số cột xuống 1 | 1 cột dưới 600 px | Tại 390 px, thẻ rộng 358 px; không tràn ngang |
-| Chữ nhóm sản phẩm chỉ 9,92 px trên điện thoại | Quy tắc `.product-category` có font-size 0,62rem | Dùng 0,75rem, tương đương 12 px | Computed style 12 px ở cả máy tính và điện thoại |
-| Giá cũ màu #858585 trên nền trắng có tỷ lệ 3,69 | Màu xám nhạt cho chữ cỡ 14,4 px | Đổi sang #58655b | Tỷ lệ 6,13; không chỉ dựa vào gạch ngang để phân biệt giá |
+| Ảnh dùng href # | Đích điều hướng chưa có nội dung | Mở trang HTML chi tiết thật, từ đó mở được SVG gốc | Bốn trang và các liên kết quay lại được kiểm tra |
+| 390px vẫn hai cột, mỗi thẻ 175px | Media query chưa chuyển còn một cột | Grid một cột dưới 600px | Thẻ 358px tại 390px, không tràn ngang |
+| Chữ nhóm 9,92px trên điện thoại | Font-size 0,62rem | Dùng 0,75rem | Computed style 12px |
+| Giá cũ xám nhạt, tương phản 3,69 | Màu #858585 trên trắng | Đổi sang #58655b | Tương phản 6,13 |
 
-Đây là nhận xét về mã nguồn học tập được cung cấp, không phải đánh giá lỗi của website Cỏ Mềm. Trình tự thực hiện: chụp hiện trạng → sửa đích và ngữ nghĩa → định dạng thẻ → thực hành bố cục → kiểm tra tương tác → tự điều chỉnh → hoàn thiện tài liệu và GitHub.
+## Điều chỉnh sau khi xem giao diện
+
+Phương án sổ xuống của bản kiểm tra làm một hàng Grid cao lên theo thẻ đang mở. Các thẻ khác bị stretch và nhóm giá có margin-top:auto nên khoảng trắng mô tả–giá tăng lên 226,78px. Bản hoàn thiện bỏ disclosure trong danh sách, khôi phục Mua ngay và bổ sung Xem chi tiết dẫn tới bốn trang HTML tĩnh. Khoảng cách tương ứng còn 16px, không thay đổi khi xem chi tiết rồi quay lại.
+
+Mua ngay được giữ là nút minh họa như phạm vi Buổi 1/2, có ghi chú chưa kết nối đặt hàng. Đây là giới hạn chức năng được công bố, không khẳng định đã có giao dịch. Không bỏ Grid chỉ để tránh hiện tượng giãn hàng; nguyên nhân được giải quyết bằng cách tách nội dung dài khỏi thẻ.

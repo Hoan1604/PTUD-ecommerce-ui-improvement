@@ -1,21 +1,19 @@
-# Đối chiếu đề bài Buổi 2
+# Đối chiếu yêu cầu Buổi 2
 
-Nguồn yêu cầu: `BaiTap_CaNhan_Buoi2 (1).pdf` do sinh viên cung cấp, 23 trang. Số trang dưới đây được kiểm tra trực tiếp từ PDF; mục “bảy câu hỏi” nằm tại phần 12, trang 21.
-
-| Yêu cầu | Vị trí trong đề | Sản phẩm và minh chứng |
+| Yêu cầu | Trang PDF | Minh chứng |
 |---|---|---|
-| Kế thừa mã Buổi 1, chọn khu vực trọng tâm | tr. 1, 3–4 | Sống Xanh; bốn sản phẩm/ảnh/giá; git parent a43d558; RA_SOAT_BUOI_1.md |
-| Ít nhất 3 vấn đề, ảnh trước | tr. 3–4 | 5 vấn đề có nguyên nhân; minh-chung/truoc |
-| HTML5, headings, ảnh alt, a, danh sách | tr. 4–7 | index.html; cấu trúc và fragment được kiểm tra |
-| CSS ngoài, font, nền, đường dẫn | tr. 7–9 | css/style.css; tải HTTP/file |
-| Selector và Box Model, ảnh trước–sau | tr. 9–12 | Quy tắc và ảnh thẻ sản phẩm; RA_SOAT và KIEM_THU |
-| Flexbox và so sánh giá trị thuộc tính | tr. 12–15 | product-prices/nav-list; ảnh thử và số đo 10/63,05px |
-| Grid mở rộng, thử 2 hoặc 3 cột, ảnh không méo | tr. 15–17 | grid-2-cot/grid-3-cot; cuối 4/2/1; contain và khung vuông |
-| Hover, transition, focus-visible | tr. 17–19 | ảnh normal/hover/focus; Tab/Enter/Space |
-| Bảng kiểm, phát hiện và tự sửa nhỏ | tr. 19–20 | KIEM_THU.md; THUC_HANH_CA_NHAN.md; đã có xác nhận sinh viên |
-| 7 câu hỏi kiến thức | tr. 21 | CAU_HOI_KIEN_THUC.md; mục tương ứng trong Word |
-| Chuẩn bị sửa mã trực tiếp | tr. 21 | Bảng 5 tình huống trong THUC_HANH_CA_NHAN.md |
-| README, AI_USAGE, commit và push repo cũ | tr. 21–23 | README.md; AI_USAGE.md; GITHUB.md |
-| 8 sản phẩm cần nộp | tr. 23 | Mã, CSS, ảnh trước–sau, ảnh cuối, kiểm thử, AI, 7 câu hỏi, repo |
+| Tiếp tục Buổi 1, chọn khu vực | 1, 3–4 | Giữ Sống Xanh, bốn ảnh/tên/giá và repo a43d558 |
+| Ít nhất ba vấn đề và ảnh trước | 3–4 | RA_SOAT_BUOI_1.md; minh-chung/truoc |
+| HTML5, headings, alt, liên kết, danh sách | 4–7 | index.html và san-pham/*.html; ID và đường dẫn được kiểm tra |
+| CSS ngoài và đường dẫn | 7–9 | css/style.css; trang con dùng ../css/style.css |
+| Selector và Box Model | 9–12 | img, product-card, product-card .btn-detail; ảnh trước/sau |
+| Flexbox và thử thuộc tính | 12–15 | product-prices, product-actions, nav-list; số đo và ảnh |
+| Grid mở rộng, thử hai/ba cột | 15–17 | Ảnh trong thu-nghiem; cấu hình cuối 4/2/1 |
+| Hover, transition, focus-visible | 17–19 | Nút mua và liên kết chi tiết, ảnh trạng thái; Tab/Enter |
+| Kiểm thử và tự sửa nhỏ | 19–20 | KIEM_THU.md; THUC_HANH_CA_NHAN.md; lịch sử padding 14→16px |
+| Bảy câu hỏi kiến thức | 21 | CAU_HOI_KIEN_THUC.md và chương tương ứng trong Word |
+| Chuẩn bị sửa mã trực tiếp | 21 | Năm tình huống trong THUC_HANH_CA_NHAN.md |
+| README, AI_USAGE và GitHub | 21–23 | Nhật ký theo chín prompt; repo cũ nhánh main |
+| Tám sản phẩm nộp | 23 | Mã, CSS, ảnh trước/sau, giao diện cuối, kiểm thử, AI, kiến thức và repository |
 
-HTML/CSS thuần; không Bootstrap/Tailwind; JavaScript tìm kiếm, lọc, sắp xếp và giỏ hàng dành cho các buổi sau. File Word nằm trong gói nộp riêng với mã nguồn.
+Mua ngay được giữ là CTA minh họa, chưa xử lý đơn. Trang chi tiết là HTML/CSS tĩnh trong phạm vi bài học, không dùng JavaScript hoặc framework. Báo cáo Word đặt riêng cùng thư mục nộp.

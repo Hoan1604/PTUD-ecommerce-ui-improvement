@@ -1,29 +1,29 @@
 # Trả lời bảy câu hỏi kiến thức
 
-## Câu 1 Các phần tử HTML5 trong khu vực đã chọn
+## Câu 1 Các phần tử HTML5 và lý do sử dụng
 
-`header` chứa thương hiệu và điều hướng; `nav` xác định nhóm liên kết di chuyển trong trang; `main` chứa nội dung chính duy nhất. `section#san-pham` nhóm danh sách có tiêu đề h1; section giới thiệu có h2. Mỗi sản phẩm dùng `article` vì là một đơn vị nội dung có tên, ảnh, giá và thông tin riêng. `ul > li` mô tả tập hợp bốn sản phẩm; các tên sản phẩm dùng h2 dưới h1. `footer` ghi thông tin bài học. `details/summary` mở/đóng thông tin không cần JavaScript; `dl/dt/dd` mô tả quy cách và mã mẫu. `div` chỉ nhóm các phần để trình bày, không thay thế ý nghĩa của nav hoặc article.
+Header chứa thương hiệu và nav; main chứa nội dung chính duy nhất. Section nhóm danh sách theo h1; mỗi sản phẩm là article có h2 riêng và aria-labelledby. Ul/li mô tả tập hợp sản phẩm và menu. Footer ghi thông tin bài học. Trang chi tiết dùng figure/figcaption cho ảnh và dl/dt/dd cho các cặp thông tin. A dùng để điều hướng Xem chi tiết, Quay lại hoặc Mở ảnh gốc; button type="button" giữ CTA Mua ngay minh họa. Div chỉ nhóm nội dung phục vụ bố cục. Mỗi trang chi tiết có h1 là tên sản phẩm, các mục mô tả/thông tin dùng h2.
 
-## Câu 2 Margin và padding
+## Câu 2 Margin và padding trên thẻ sản phẩm
 
-Padding là khoảng cách từ nội dung tới mép trong của phần tử; margin là khoảng cách ngoài phần tử. `.product-info` có padding 20 px trên máy tính. `.product-description` có margin `8px 0 16px`, tạo khoảng cách bên ngoài đoạn mô tả với phần trước và nhóm giá. Khoảng cách giữa các thẻ do Grid gap 22 px tạo ra, không phải padding của từng thẻ. `.product-card` có border 1 px và border-radius 14 px. Quy tắc `box-sizing: border-box` làm width bao gồm padding và border của chính phần tử; margin nằm ngoài. Không được cộng border của article vào width của div nội dung như thể chúng là cùng một phần tử.
+Padding là khoảng cách trong phần tử; margin nằm ngoài phần tử. Product-info có padding 20px trên máy tính và 16px dưới 600px. Product-description có margin 8px 0 16px, tách mô tả khỏi tên và nhóm giá. Khoảng cách giữa các thẻ do gap của Grid quản lý. Article có border 1px và bo góc 14px. Border-box đưa padding và border của chính phần tử vào width; margin vẫn ở ngoài. Với thẻ 263,5px, vùng trong border là 261,5px và vùng chữ sau padding ngang còn 221,5px.
 
-## Câu 3 Flexbox dùng ở đâu
+## Câu 3 Flexbox được dùng ở đâu
 
-Menu `.nav-list`, nhóm `.product-prices`, `.header-inner` và nội dung `.product-info` dùng Flexbox. Với nhóm giá theo hàng, `justify-content: flex-start` gom giá về đầu trục chính; `align-items: baseline` căn đường cơ sở chữ dù giá hiện tại 20 px và giá cũ 14 px. Gap ngang là 10 px, flex-wrap cho phép xuống hàng. Thử space-between ở 1366 px làm khoảng cách giữa hai mức giá tăng từ 10 lên 63,05 px; bản nộp giữ flex-start để hai giá liên quan được nhóm gần nhau. Với `.product-info` có flex-direction: column, trục chính đổi sang dọc; margin-top: auto trên price-block đẩy nhóm giá về cuối phần nội dung, giúp các thẻ đóng căn đều.
+Product-prices sắp giá theo hàng với justify-content:flex-start, align-items:baseline, gap ngang 10px và flex-wrap:wrap. Justify-content điều khiển trục chính; align-items điều khiển căn chỉnh theo trục phụ. Baseline giúp hai cỡ chữ 20/14px có đường cơ sở thẳng nhau. Thử space-between làm khoảng cách tăng lên 63,05px nên bản cuối giữ flex-start. Product-actions dùng flex-direction:column và gap:10px cho Mua ngay/Xem chi tiết; lúc này trục chính theo chiều dọc. Menu và nội dung thẻ cũng dùng Flexbox.
 
-## Câu 4 Grid khác Flexbox thế nào
+## Câu 4 Grid khác Flexbox như thế nào
 
-Flexbox chủ yếu bố trí theo một chiều tại một thời điểm; Grid định nghĩa hệ hàng và cột. Vì cần các thẻ cùng số cột và khoảng cách nhất quán, `.product-grid` dùng Grid với repeat và minmax. Các nhóm nhỏ bên trong như menu và giá dùng Flexbox. Đây là cách kết hợp, không phải chỉ được chọn một trong hai. Bản cuối có 4/2/1 cột theo viewport; đã thử 2 và 3 cột ở cùng 1366 px để quan sát.
+Flexbox chủ yếu bố trí theo một chiều tại một thời điểm; Grid định nghĩa hàng và cột. Danh sách cần số cột thống nhất nên dùng Grid 4/2/1 theo viewport. Nhóm giá và nút nhỏ dùng Flexbox. Grid hai cột trên trang chi tiết bố trí ảnh cạnh thông tin; dưới 768px chuyển một cột. Hai kỹ thuật bổ sung cho nhau. Đã thử hai/ba cột ở cùng 1366px để quan sát thay vì chỉ chép cấu hình.
 
-## Câu 5 Nếu xóa display grid
+## Câu 5 Điều gì xảy ra nếu bỏ display grid
 
-Nếu không có quy tắc khác tiếp tục đặt display: grid, ul.product-grid trở về block. Các li chứa article lần lượt xếp dọc, không còn các track 4 cột; grid-template-columns không tạo cột trong bố cục block. Trong phép thử tạm đặt display: block tại 1366 px, thẻ đầu rộng 1120 px bằng vùng chứa, thay vì 263,5 px. Gap của Grid không tạo khoảng cách hàng/cột như trước. Thử nghiệm được khôi phục sau khi đo, không làm thay đổi bản nộp.
+Nếu không có quy tắc khác đặt Grid, ul.product-grid trở về bố cục block. Các li/article xếp lần lượt theo chiều dọc; grid-template-columns không còn tạo track cột. Trong phép thử display:block ở 1366px, thẻ đầu rộng 1120px thay vì 263,5px. Gap của Grid không tạo khoảng cách hàng/cột như trước. Đây là phép thử tạm; cấu hình Grid đã được khôi phục trước khi nộp.
 
 ## Câu 6 Vì sao ảnh cần alt
 
-Ảnh sản phẩm mang thông tin, nên alt cung cấp mô tả thay thế khi ảnh không tải và hỗ trợ người dùng trình đọc màn hình. Ví dụ: “Chai tinh chất dưỡng da màu xanh nhạt”. Alt cần phù hợp nội dung ảnh, không dùng tên tệp hoặc nhồi từ khóa. Liên kết bao ảnh có aria-label mô tả hành động mở ảnh; hai mục đích này được phân biệt. Ảnh trang trí thuần túy có thể dùng alt rỗng, nhưng bốn ảnh sản phẩm trong bài đều có ý nghĩa nên giữ mô tả.
+Ảnh sản phẩm có ý nghĩa nên alt mô tả nội dung thay thế khi ảnh không tải và hỗ trợ người dùng trình đọc màn hình. Ví dụ “Chai tinh chất dưỡng da màu xanh nhạt”. Alt cần đúng ảnh, không dùng tên tệp hoặc nhồi từ khóa. Aria-label của liên kết ảnh mô tả hành động xem chi tiết; alt mô tả hình. Ảnh trang trí thuần túy có thể alt rỗng nhưng bốn ảnh sản phẩm trong bài không phải trường hợp đó.
 
-## Câu 7 Một đề xuất AI đã được kiểm tra hoặc điều chỉnh
+## Câu 7 Đề xuất AI đã được kiểm tra hoặc điều chỉnh
 
-Đề xuất thay nút “Mua ngay” chưa có xử lý được đối chiếu với phạm vi HTML/CSS của Buổi 2. Phương án được chọn là details/summary để mở thông tin, thay vì tạo thao tác đặt hàng không hoạt động. Kết quả đã được kiểm tra bằng chuột, Tab, Enter và Space trên bản mã cuối; thông tin mở/đóng được và có focus-visible. Phép kiểm tra tự động do AI thực hiện, ghi tại ket-qua-kiem-thu.json. Phần sinh viên tự điều chỉnh padding và xác nhận thao tác được ghi riêng trong THUC_HANH_CA_NHAN.md, không nhập chung với kết quả tự động.
+Phương án AI thay nút Mua ngay bằng phần Xem thông tin sổ xuống được điều chỉnh sau khi xem giao diện. Sinh viên yêu cầu giữ Mua ngay và chỉ ra khoảng trắng ở các thẻ bên cạnh khi mở thông tin. Bản cuối khôi phục CTA chính và dùng liên kết Xem chi tiết tới trang HTML có ảnh, mô tả và quy cách. AI đo được khoảng trống giảm từ 226,78px xuống 16px và kiểm tra đi trang chi tiết/quay lại không đổi chiều cao hàng. Ngoài ra, sinh viên đã xác nhận tự sửa padding điện thoại 14→16px; ảnh và phép đo do AI thực hiện được ghi riêng.

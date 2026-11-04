@@ -11,3 +11,7 @@ Truy cập và đối chiếu ngày 04/11/2026. Các trang MDN dùng để kiể
 7. [MDN details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details).
 8. [MDN focus-visible](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible).
 9. [W3C WCAG 2.2 Understanding Contrast Minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) — công thức độ sáng và ngưỡng tham chiếu cho chữ thường.
+
+10. [MDN HTML button](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button).
+11. [MDN HTML anchor](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a).
+12. [MDN align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-items).
