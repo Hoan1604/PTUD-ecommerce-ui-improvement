@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>@ViewData["Title"] - Hoàn Cinema</title><script type="importmap"></script>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<header class="site-header"><nav class="navbar navbar-expand-lg navbar-dark container" aria-label="Điều hướng chính">
+<a class="navbar-brand" asp-area="" asp-controller="Movies" asp-action="Index"><span class="brand-mark">▶</span><span>HOÀN <b>CINEMA</b><small>31241028406 · Vũ Văn Hoàn</small></span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav main-links"><li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Movies" asp-action="Index">Phim</a></li><li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Genres" asp-action="Index">Thể loại</a></li><li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Quyền riêng tư</a></li></ul><partial name="_LoginPartial" /></div>
+</nav></header>
+<main class="container site-main">@RenderBody()</main>
+<footer class="site-footer"><div class="container">&copy; @DateTime.Now.Year · 31241028406 · Vũ Văn Hoàn</div></footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script><script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script><script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body></html>

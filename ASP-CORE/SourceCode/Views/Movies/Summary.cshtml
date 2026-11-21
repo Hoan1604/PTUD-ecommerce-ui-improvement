@@ -1,0 +1,2 @@
+@model _31241028406_VuVanHoan.Models.HoaDon
+<div class="cart-summary"><span>Giỏ hàng: <strong>@Model.ChiTietHoaDons.Sum(x => x.SoLuong)</strong> sản phẩm · @Model.TongTien.ToString("N0") ₫</span><a asp-controller="Movies" asp-action="Checkout">Thanh toán</a></div>

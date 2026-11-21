@@ -1,0 +1,35 @@
+@model IEnumerable<_31241028406_VuVanHoan.Models.Genre>
+
+@{
+    ViewData["Title"] = "Danh sách thể loại";
+}
+
+<h1>Danh sách thể loại</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">+ Thêm thể loại</a>
+</p>
+<div class="table-responsive"><table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table></div>

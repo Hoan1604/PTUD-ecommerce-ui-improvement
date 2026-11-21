@@ -1,0 +1,10 @@
+@model IEnumerable<_31241028406_VuVanHoan.Models.Movie>
+@{ ViewData["Title"] = "Danh sách phim"; }
+<section class="page-heading"><div><span class="eyebrow">BỘ SƯU TẬP PHIM</span><h1>Khám phá phim</h1><p>Chọn một bộ phim yêu thích cho buổi xem tiếp theo của bạn.</p></div><a asp-action="Create" class="btn btn-primary">+ Thêm phim mới</a></section>
+<div class="movie-grid">
+@foreach (var item in Model) {
+<article class="movie-card"><div class="poster-wrap"><img src="@(string.IsNullOrWhiteSpace(item.PicturePath) ? "/images/no-image.jpg" : item.PicturePath)" alt="Poster phim @item.Title" /></div>
+<div class="movie-body"><div class="movie-meta"><span>@(item.GenreObj?.Name ?? item.Genre)</span><span>★ @item.Rated</span></div><h2>@item.Title</h2><p class="movie-summary">@item.Summary</p><p class="release-date">Phát hành: @item.ReleaseDate.ToString("dd/MM/yyyy")</p><div class="movie-buy"><strong>@item.Price.ToString("N0") ₫</strong><a class="btn btn-primary" asp-action="AddToCart" asp-route-id="@item.ID">Mua</a></div><div class="card-actions"><a asp-action="Edit" asp-route-id="@item.ID">Sửa</a><a asp-action="Details" asp-route-id="@item.ID">Chi tiết</a><a asp-action="Delete" asp-route-id="@item.ID">Xóa</a></div></div></article>
+}
+</div>
+@if (!Model.Any()) { <div class="empty-state">Chưa có phim nào. Hãy thêm phim vào bộ sưu tập.</div> }

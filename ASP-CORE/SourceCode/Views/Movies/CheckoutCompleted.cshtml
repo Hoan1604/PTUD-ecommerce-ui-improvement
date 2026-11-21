@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Đặt hàng thành công";
+}
+
+<h2>Cảm ơn bạn!</h2>
+
+<p>Đơn hàng của bạn đã được ghi nhận.</p>
+
+<p>Mã hóa đơn: <strong>@ViewBag.MaHoaDon</strong></p>
+
+@if (ViewBag.GuiEmailThanhCong == true)
+{
+    <p>Email xác nhận đã được gửi.</p>
+}
+else
+{
+    <p>Đơn hàng đã được lưu, nhưng chưa gửi được email xác nhận.</p>
+}
+
+<a asp-action="Index" class="btn btn-primary">Tiếp tục mua sắm</a>

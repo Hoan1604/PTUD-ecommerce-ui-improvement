@@ -1,0 +1,64 @@
+@model _31241028406_VuVanHoan.Models.HoaDon
+
+@{
+    ViewBag.Title = "Giỏ hàng";
+}
+
+<h2>Giỏ hàng của bạn</h2>
+
+<div class="table-responsive"><table class="table">
+    <thead>
+        <tr>
+            <th>Số lượng</th>
+            <th>Sản phẩm</th>
+            <th class="text-end">Đơn giá</th>
+            <th class="text-end">Thành tiền</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var chiTiet in Model.ChiTietHoaDons)
+        {
+            <tr>
+                <td>
+                    <form asp-action="UpdateCart" method="post" class="d-flex gap-2">
+                        <input type="hidden" name="maMovie" value="@chiTiet.MaMovie" />
+
+                        <input type="number" name="soLuong" value="@chiTiet.SoLuong" min="1" class="form-control"
+                               style="width: 75px;" />
+
+                        <button type="submit" class="btn btn-sm btn-primary">
+                            Cập nhật
+                        </button>
+                    </form>
+                </td>
+                <td>@chiTiet.MovieObj.Title</td>
+                <td class="text-end">
+                    @chiTiet.MovieObj.Price.ToString("N0")
+                </td>
+                <td class="text-end">
+                    @((chiTiet.SoLuong * chiTiet.MovieObj.Price).ToString("N0"))
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-warning" asp-action="RemoveFromCart" asp-route-maMovies="@chiTiet.MaMovie">
+                        Xóa
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-end"><strong>Tổng tiền:</strong></td>
+            <td class="text-end">@Model.TongTien.ToString("N0")</td>
+            <td></td>
+        </tr>
+    </tfoot>
+</table></div>
+
+<div class="text-center">
+    <a class="btn btn-primary" asp-action="Index">Tiếp tục mua sắm</a>
+    <a class="btn btn-primary" asp-action="Checkout">Thanh toán</a>
+</div>
