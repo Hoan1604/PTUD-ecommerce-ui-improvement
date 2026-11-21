@@ -4,11 +4,39 @@
 
 Chức năng gồm xem, thêm, sửa, xóa phim và thể loại; thêm phim vào giỏ hàng, thanh toán, lưu hóa đơn và gửi email xác nhận. Chức năng email đã thử thành công trên máy cá nhân nhưng chưa cấu hình gửi thành công trên Somee.
 
+## Cấu trúc thư mục
+
+- `SourceCode/`: dự án ứng dụng.
+  - `Controllers/`, `Models/`, `Views/`: xử lý yêu cầu, mô hình dữ liệu và giao diện MVC.
+  - `Data/`: `ApplicationDbContext` cho Entity Framework Core và Identity; `Migrations/`: các migration tạo và cập nhật lược đồ cơ sở dữ liệu.
+  - `Extension/`: tiện ích session và gửi email; `Validation/`: các thuộc tính kiểm tra dữ liệu.
+  - `Areas/Identity/`: phần giao diện Identity được tùy chỉnh trong dự án; `Properties/`: cấu hình chạy cục bộ (`launchSettings.json`).
+  - `wwwroot/`: CSS, JavaScript, thư viện giao diện và hình ảnh phim.
+  - `Program.cs`: cấu hình dịch vụ, kết nối SQL Server và định tuyến; `31241028406_VuVanHoan.csproj`: framework, gói phụ thuộc và ID User Secrets.
+  - `appsettings.example.json`: cấu hình mẫu với giá trị giả; `.gitignore`: loại cấu hình cục bộ, cơ sở dữ liệu và kết quả build khỏi Git.
+  - `bin/`, `obj/`: kết quả build và file tạm được tạo cục bộ, không thuộc bản nộp.
+- `Report/`: hiện chưa có file.
+- `README.md`: tài liệu dự án và hướng dẫn chạy.
+
 ## Chuẩn bị và cấu hình
 
-Cần .NET SDK 10, một SQL Server có thể kết nối và quyền tạo/cập nhật cơ sở dữ liệu. Mở terminal tại `ASP-CORE/SourceCode`. `appsettings.example.json` chỉ chứa giá trị giả để tham khảo; ứng dụng tự đọc User Secrets trong môi trường Development hoặc biến môi trường, không tự nạp file mẫu.
+1. Cài .NET SDK 10 và kiểm tra bằng `dotnet --list-sdks`. Cài hoặc truy cập một SQL Server, bảo đảm máy chạy ứng dụng kết nối được và tài khoản có quyền tạo hoặc cập nhật cơ sở dữ liệu dành cho bài này.
+2. Từ thư mục gốc repository, mở terminal tại dự án:
 
-Thiết lập User Secrets cho dự án bằng cách chạy `dotnet user-secrets init` (dự án đã có ID riêng), rồi mở file `%APPDATA%\Microsoft\UserSecrets\ptud-ecommerce-submission-4f25c372-4266-4b06-a661-76d0f3cfd854\secrets.json` trên Windows (hoặc dùng công cụ quản lý User Secrets của IDE) và đặt các khóa sau:
+   ```powershell
+   cd ASP-CORE/SourceCode
+   dotnet restore
+   ```
+
+3. Cấu hình khóa bắt buộc `ConnectionStrings:DefaultConnection` bằng chuỗi kết nối SQL Server của bạn. Chuỗi cần xác định máy chủ, tên cơ sở dữ liệu và phương thức xác thực phù hợp. `appsettings.example.json` minh họa các trường bằng giá trị giả; ứng dụng không tự nạp file mẫu. Không đưa cấu hình thật vào repository.
+
+### User Secrets cho máy phát triển
+
+Dự án đã có `UserSecretsId` trong file `.csproj`. Trên Windows, tạo thư mục và file sau nếu chưa tồn tại, hoặc mở User Secrets bằng IDE:
+
+`%APPDATA%\Microsoft\UserSecrets\ptud-ecommerce-submission-4f25c372-4266-4b06-a661-76d0f3cfd854\secrets.json`
+
+Nội dung có cấu trúc như sau; thay các giá trị trong ngoặc nhọn bằng thông tin riêng trên máy của bạn:
 
 ```json
 {
@@ -18,23 +46,30 @@ Thiết lập User Secrets cho dự án bằng cách chạy `dotnet user-secrets
 }
 ```
 
-Có thể chạy `dotnet user-secrets list` để xác nhận tên khóa, nhưng lệnh này hiển thị cả giá trị nên không dùng ở nơi công khai. Không đưa secrets vào file cấu hình được theo dõi hoặc chia sẻ lịch sử terminal. Email là tùy chọn; nếu thiếu cấu hình, đơn hàng vẫn được lưu nhưng email không gửi được.
+Hai khóa email là tùy chọn. Khi thiếu cấu hình email, đơn hàng vẫn được lưu nhưng thư xác nhận không được gửi. Email dùng Gmail SMTP; cần tài khoản và App Password phù hợp nếu muốn thử gửi. Không chia sẻ file secrets hoặc lịch sử terminal chứa giá trị thật. `dotnet user-secrets list` hiển thị cả giá trị bí mật.
 
-Ngoài ra có thể cấu hình biến môi trường `ConnectionStrings__DefaultConnection`, `Email__Address` và `Email__AppPassword`. Trên môi trường triển khai như Somee, đặt các giá trị trong cấu hình riêng của máy chủ. Hai dấu gạch dưới biểu diễn dấu `:` trong khóa cấu hình. File `appsettings.json` và `appsettings.Development.json` trong SourceCode được Git bỏ qua nếu cần cấu hình riêng tại máy.
+User Secrets được nạp trong môi trường `Development`. Trước khi chạy migration và ứng dụng trong PowerShell, chọn môi trường này:
+
+```powershell
+$env:ASPNETCORE_ENVIRONMENT = "Development"
+```
+
+### Biến môi trường
+
+Có thể dùng `ConnectionStrings__DefaultConnection`, `Email__Address` và `Email__AppPassword` thay cho User Secrets; hai dấu gạch dưới tương ứng với dấu `:` trong tên khóa. Cấu hình các biến bằng công cụ quản lý môi trường của máy hoặc máy chủ, tránh ghi giá trị thật vào file theo dõi. Với Somee, cấu hình riêng trên máy chủ; việc gửi email trên Somee hiện chưa thành công.
 
 ## Khôi phục và chạy
 
+Các lệnh dưới đây chạy trong `ASP-CORE/SourceCode` sau khi đã cấu hình kết nối và môi trường ở trên:
+
 ```powershell
-cd ASP-CORE/SourceCode
-dotnet restore
 dotnet tool install --global dotnet-ef --version 10.0.15
 dotnet ef database update
 dotnet run
 ```
 
-Nếu `dotnet-ef` đã được cài, dùng phiên bản tương thích với EF Core 10 thay vì cài lại. Tạo hoặc cập nhật cơ sở dữ liệu chỉ sau khi kiểm tra chuỗi kết nối trỏ đến cơ sở dữ liệu dành cho bài này. Mở địa chỉ localhost được `dotnet run` hiển thị. Dữ liệu mẫu không được bao gồm; thêm phim và thể loại để thử các chức năng.
+Nếu `dotnet-ef` đã được cài, dùng phiên bản tương thích với EF Core 10 thay vì cài lại; bảo đảm thư mục công cụ .NET toàn cục có trong PATH. `dotnet ef database update` áp dụng các migration vào cơ sở dữ liệu trong chuỗi kết nối và có thể tạo cơ sở dữ liệu nếu tài khoản có quyền. Kiểm tra đích kết nối trước khi chạy để tránh thay đổi nhầm cơ sở dữ liệu. Mở địa chỉ localhost được `dotnet run` hiển thị. Dữ liệu mẫu không được bao gồm; thêm phim và thể loại để thử các chức năng.
 
 ## Kiểm tra trước khi nộp
 
 Từ thư mục gốc repository, chạy `git status --short --untracked-files=all` và `git ls-files --others --exclude-standard ASP-CORE` để xem các file chưa được theo dõi; dùng `git diff --cached --name-only` sau khi stage để kiểm tra chính xác danh sách đã stage. Rà soát bí mật trước khi commit; không dùng `git add -f` với cấu hình cục bộ hoặc thư mục build.
-
