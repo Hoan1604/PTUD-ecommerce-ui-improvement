@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#164d3c"><title>Nhịp Việc · Bảng công việc</title><link rel="stylesheet" href="/style.css"><script defer src="/ui.js"></script></head>
+<body>
+<aside class="sidebar"><a class="brand" href="#board"><span class="logo"><i></i><i></i><i></i></span>Nhịp Việc<span class="brand-dot">.</span></a>
+<nav aria-label="Điều hướng chính"><small>KHÔNG GIAN LÀM VIỆC</small><button id="boardNav" class="nav active" data-icon="board">Bảng công việc</button><button id="statsNav" class="nav" data-icon="chart">Thống kê</button>
+<div class="navline"></div><small>DANH MỤC</small><div id="sideGroups"></div></nav>
+<div class="workspace"><span class="avatar">NV</span><div><b>Không gian cá nhân</b><span>Nhịp Việc</span></div></div></aside>
+<main><div class="crumb"><span data-icon="layout"></span><span>Không gian cá nhân</span><span class="slash">/</span><strong id="crumbTitle">Bảng công việc</strong></div>
+<header class="heading"><div><div id="today"></div><h1 id="pageTitle">Bảng công việc</h1></div><button class="primary" id="newTask" data-icon="plus">Thêm công việc</button></header>
+<div id="error" role="alert" hidden></div>
+<section class="hero" aria-label="Tiến độ chung"><div class="herocopy"><span class="hero-label"><i></i> TỔNG QUAN TIẾN ĐỘ</span><h2>Tiến độ hoàn thành</h2><div class="progressline"><div class="track"><i id="progressFill"></i></div><b id="progressNum">—</b></div><p id="progressText">Đang tải công việc…</p></div>
+<div class="paperart" aria-hidden="true"><div class="orbit"></div><div class="sheet sheet-back"></div><div class="sheet sheet-mid"></div><div class="sheet sheet-top"><div class="binding"></div><div class="paperhead"></div><div class="paperrow"><i>✓</i><b></b></div><div class="paperrow"><i>✓</i><b></b></div><div class="paperrow"><i></i><b></b></div></div><div class="star">✦</div><div class="tiny-star">✧</div></div></section>
+<section class="cards" id="cards" aria-label="Số lượng theo trạng thái"></section>
+<section id="listSection" class="panel"><div class="panelhead"><h2 id="listTitle">Danh sách công việc</h2><label class="search"><span data-icon="search"></span><input id="search" type="search" placeholder="Tìm công việc…" aria-label="Tìm công việc theo tên"></label></div>
+<div class="filters" id="filters" aria-label="Lọc theo trạng thái"></div>
+<div id="tasks" aria-live="polite"></div><div class="panelfoot" id="listFoot"></div></section>
+<section id="statsSection" hidden class="panel statistics"><h2>Tiến độ theo danh mục</h2><div id="statTable"></div></section>
+</main>
+<dialog id="editor"><form id="taskForm"><div class="dialoghead"><h2 id="formTitle">Thêm công việc</h2><button class="icon close" type="button" aria-label="Đóng" data-icon="close"></button></div>
+<label>Tên công việc <em>*</em><input name="title" required maxlength="120" placeholder="Nhập tên công việc"></label><label>Mô tả<textarea name="description" maxlength="1200" rows="3" placeholder="Ghi chú cho công việc này"></textarea></label>
+<div class="formgrid"><label>Danh mục<select name="category"><option value="study">Học tập</option><option value="work">Công việc</option><option value="personal">Cá nhân</option></select></label><label>Trạng thái<select name="status"><option value="todo">Chưa làm</option><option value="doing">Đang làm</option><option value="done">Hoàn thành</option></select></label></div>
+<label>Ngày đến hạn<input type="date" name="due_date"></label><p class="formerror" role="alert"></p><div class="actions"><button class="secondary close" type="button">Hủy</button><button class="primary" type="submit">Lưu công việc</button></div></form></dialog>
+<dialog id="confirm"><div class="dialoghead"><h2>Xóa công việc?</h2><button class="icon close" aria-label="Đóng" data-icon="close"></button></div><p id="deleteMessage"></p><p class="formerror" role="alert"></p><div class="actions"><button class="secondary close">Hủy</button><button class="danger" id="deleteYes">Xóa công việc</button></div></dialog>
+<div id="toast" role="status"></div></body></html>
